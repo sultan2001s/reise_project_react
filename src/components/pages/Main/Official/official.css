@@ -1,0 +1,30 @@
+.official{
+    padding: 160px 0 160px;
+}
+
+.official__title{
+    margin-bottom: 52px;
+    text-align: center;
+    font-family: 'Gotham', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 40px;
+    color: #1E005A;
+}
+
+.official__card{
+    display: flex;
+    align-items: flex-start;
+    column-gap: 32px;
+    justify-content: center;
+}
+.official__img3{
+    margin-top: -30px;
+}
+
+@media (max-width: 1077px) {
+    .official{
+        display: none;
+    }
+}

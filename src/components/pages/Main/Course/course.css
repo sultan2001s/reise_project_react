@@ -1,0 +1,73 @@
+.course{
+    padding: 48px 0 78px;
+    background: #1E005A;
+}
+
+.course__top{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.course__title{
+    font-family: 'Gotham', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 40px;
+    color: #FFFFFF;
+}
+.course__text{
+    font-family: 'Gotham', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: rgba(255, 255, 255, 0.7);
+
+}
+
+.course__btn{
+    font-family: 'Gotham', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    cursor: pointer;
+    border: none;
+    color: #FFFFFF;
+    width: 294px;
+    height: 64px;
+    background: #FE0000;
+    border-radius: 15px;
+}
+
+.course__btn:hover{
+    background: #1E005A;
+    transition: 1s;
+}
+
+.course__img{
+    width: 100%;
+    padding: 4px 4px 4px 4px;
+    border-radius: 30px;
+    border: 3px solid #FE0000;
+}
+
+.course__card{
+    margin: 56px 0 44px;
+
+}
+
+.course__row{
+    display: flex;
+    align-items: center;
+    column-gap: 22px;
+}
+
+@media (max-width: 742px) {
+    .course__top {
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 30px;
+    }
+}

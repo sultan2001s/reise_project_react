@@ -1,0 +1,48 @@
+.faces{
+    padding: 98px 0 140px;
+}
+
+.faces__block{
+    display: flex;
+    column-gap: 32px;
+    align-items: center;
+}
+
+
+.faces__title{
+    font-family: 'Gotham', sans-serif;
+    text-align: center;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 48px;
+    color: #1E005A;
+}
+
+.faces__h2{
+    font-family: 'Gotham', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;
+    color: #1E005A;
+    margin: 16px 0 16px;
+}
+
+.faces__img{
+    width: 100%;
+}
+
+.faces__text{
+    font-family: 'Gotham', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: #1E005A;
+}
+
+.faces__card{
+    margin-top: 74px;
+    text-align: center;
+}
