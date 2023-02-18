@@ -1,10 +1,24 @@
 import React, {useState} from 'react';
+import {motion} from "framer-motion"
 import {NavLink, Link} from "react-router-dom";
+import InputMask from 'react-input-mask'
+
 import './header.css'
 
 import logo from '../../images/logo.png'
 import Job from "../../pages/Job/Job";
 
+const textAnimation = {
+    hidden: {
+        x: -20,
+        opacity: 0,
+    },
+    visible: custom => ({
+        x: 0,
+        opacity: 1,
+        transaction: {delay: custom * 0.2},
+    })
+};
 
 const Header = () => {
     const [burger, setBurger] = useState(false);
@@ -19,16 +33,16 @@ const Header = () => {
 
     return (
 
-        <header className="header">
+        <motion.header className="header" initial="hidden" whileInView="visible">
             <div className="container">
-                <nav className="header__nav">
+                <motion.nav  custom={1} variants={textAnimation} className="header__nav">
                     <Link to='/'><img className="header__img" src={logo} alt="logo"/></Link>
                     <ul className={`header__list ${burger ? 'header__list_active' : ''}`}>
                         <NavLink to='/' className="header__link">На главную</NavLink>
-                        <div onClick={() => setOpenJob((prev) => !prev)} className={`header__bg ${openJob ? 'header__bg_active' : ''}`}>
+                        <div onClick={() => setOpenJob(!openJob)} className={`header__bg ${openJob ? 'header__bg_active' : ''}`}>
                             <li className="header__link1">Работа</li>
                         </div>
-                        <NavLink to='/studies' className="header__link">Учеба</NavLink>
+                        <li className="header__link"><a href="#certificate" className="header__link">Учеба</a></li>
                         <li onClick={() => setOpen(true)} className="header__link">Консультация</li>
                         <NavLink to='/company' className="header__link">О компании</NavLink>
                         <NavLink to='/courses' className="header__link">Курсы</NavLink>
@@ -36,7 +50,7 @@ const Header = () => {
                     <div onClick={() => setBurger(!burger)} className={`header__burger ${burger ? 'header__burger_active' : ''}`}>
                         <span className="header__burger-line"/>
                     </div>
-                </nav>
+                </motion.nav>
             </div>
             {
                 open && (
@@ -54,16 +68,12 @@ const Header = () => {
                                     <input className="overlay__input" type="text" placeholder="Фамилия"/>
                                 </label>
                                 <label className="overlay__label">
-                                    <span style={{color: 'white', paddingLeft: '23px'}}>О себе</span>
-                                    <input className="overlay__input" type="text" placeholder="Фамилия"/>
-                                </label>
-                                <label className="overlay__label">
                                     <span style={{color: 'white', paddingLeft: '23px'}}>Instagram</span>
                                     <input className="overlay__input" type="text" placeholder="@aiperi_3452"/>
                                 </label>
                                 <label className="overlay__label">
                                     <span style={{color: 'white', paddingLeft: '23px'}}>Номер</span>
-                                    <input className="overlay__input" type="number" placeholder="+996554678954"/>
+                                    <InputMask className="overlay__input" type="tel" mask={`+\\9\\96(999)99-99-99`} placeholder="+996554678954"/>
                                 </label>
                                 <label className="overlay__label">
                                     <span style={{color: 'white', paddingLeft: '23px'}}>Ваш вопрос</span>
@@ -85,6 +95,7 @@ const Header = () => {
                                     </label>
                                 </div>
                             </form>
+
                             <button className="overlay__btn">Отправить запрос</button>
                         </div>
                     </div>
@@ -93,7 +104,7 @@ const Header = () => {
             {
                 openJob &&  <Job/>
             }
-        </header>
+        </motion.header>
     );
 };
 

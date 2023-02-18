@@ -1,16 +1,28 @@
 import React from 'react';
+import {motion} from "framer-motion";
 
 import './saturday.css'
 import {FaInstagram} from "react-icons/fa";
 
 import saturdayImg from '../../../images/saturdayImg.png'
 
+const textAnimation = {
+    hidden: {
+        x: -40,
+        opacity: 0,
+    },
+    visible: custom => ({
+        x: 0,
+        opacity: 1,
+        transaction: {delay: custom * 0.2},
+    })
+};
 
 const Saturday = () => {
     return (
-        <section className="">
+        <motion.section className="saturday" initial="hidden" whileInView="visible">
             <div className="container">
-                <div className="saturday__content">
+                <motion.div custom={1} variants={textAnimation} className="saturday__content">
                     <div className="saturday__left">
                         <h2 className="deutsch__title">Sprechen каждую субботу</h2>
                         <p className="saturday__text">
@@ -36,9 +48,9 @@ const Saturday = () => {
                     <div className="saturday__right">
                         <img className="saturday__img" src={saturdayImg} alt="saturdayImg"/>
                     </div>
-                </div>
+                </motion.div>
             </div>
-        </section>
+        </motion.section>
     );
 };
 

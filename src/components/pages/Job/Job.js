@@ -1,18 +1,13 @@
 import React from 'react';
 
 import './job.css'
-const Job = (setOpenJob) => {
-    const closeJob = (e) => {
-        if (e.target.classList.contains('dropDown')) {
-            setOpenJob(false)
-        }
-    };
+const Job = ({burger}) => {
 
     return (
-        <div onClick={closeJob} className="dropDown">
+        <div className={`dropDown ${burger ? 'header__list_active' : ''}`}>
             <ul className="job__list">
-                <li className="job__item">Летняя работа (Ferienjob)</li>
-                <li className="job__item">Годовая работа</li>
+                <li className="job__item"><a href="#program" className="job__item">Летняя работа (Ferienjob)</a></li>
+                <li className="job__item"><a href="#annual" className="job__item">Годовая работа</a></li>
             </ul>
         </div>
     );

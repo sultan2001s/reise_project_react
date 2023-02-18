@@ -115,6 +115,20 @@
     column-gap: 50px;
 }
 
+.diploma__btn{
+    width: 294px;
+    height: 64px;
+    cursor: pointer;
+    border: none;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    margin: 56px 0 209px;
+    color: #FFFFFF;
+    background: #FE0000;
+    border-radius: 4px;
+}
+
 .annual__text{
     font-family: 'Arial', sans-serif;
     font-style: normal;
@@ -213,7 +227,6 @@
 
 /* diploma*/
 .diploma{
-    background: #1E005A;
     padding: 13px 0 20px;
 }
 .diploma__title{
@@ -236,7 +249,7 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 28px;
-    color: #FFFFFF;
+    color: #1E005A;
     margin-bottom: 8px;
 }
 

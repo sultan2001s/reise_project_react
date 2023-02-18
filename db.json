@@ -1,0 +1,51 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "email": "admin@mail.ru",
+      "password": "$2a$10$psOW/8DO5.TnH7x0hq4QluM7Da9p42dkLvWSnNnLKawT.oIGtmsyO",
+      "login": "Admin",
+      "phone": "+996(500)32-63-20"
+    }
+  ],
+  "main": [
+    {
+      "id": 1,
+      "title": "Hoody Chess",
+      "price": 415,
+      "priceSale": 200,
+      "image": {
+        "black": "Shop/hoody1.jpg",
+        "red": "Shop/hoody1-red.jpg",
+        "white": "Shop/hoody1-white.jpg",
+        "blue": "Shop/hoody1-blue.jpg"
+      },
+      "category": "hoody",
+      "size": [
+        "s",
+        "m",
+        "l",
+        "xl",
+        "xxl",
+        "xs"
+      ],
+      "colors": [
+        "red",
+        "blue",
+        "white",
+        "black"
+      ],
+      "inStock": 15
+    }
+  ],
+  "courses": [
+    {
+      "id": 1
+    }
+  ],
+  "company": [
+    {
+      "id": 1
+    }
+  ]
+}

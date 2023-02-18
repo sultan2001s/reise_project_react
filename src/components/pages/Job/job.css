@@ -1,9 +1,52 @@
 .dropDown{
     position: absolute;
-    top: 7.3rem;
+    top: 7.1rem;
     right: 34%;
     width: 424px;
     height: 151px;
     background: #FE0000;
 }
 
+.job__item{
+    font-family: 'Gotham', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    color: #FFFFFF;
+}
+
+.job__list{
+    padding: 32px 0 39px 43px;
+}
+
+@media (max-width: 992px) {
+    .dropDown {
+        position: absolute;
+        top: 7rem;
+        right: 50%;
+        width: 337px;
+        height: 133px;
+        background: #FE0000;
+        z-index: 100;
+    }
+    .job__list {
+        padding: 32px 0 39px 20px;
+    }
+    .job__item {
+        font-size: 22px;
+        line-height: 30px;
+    }
+}
+
+@media (max-width: 684px) {
+    .dropDown {
+        position: absolute;
+        top: 12rem;
+        right: 0;
+        width: 342px;
+        height: 133px;
+        background: #FE0000;
+        z-index: 100;
+    }
+}

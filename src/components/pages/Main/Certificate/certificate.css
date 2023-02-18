@@ -88,7 +88,6 @@
     font-size: 24px;
     line-height: 32px;
     color: #FFFFFF;
-    margin-top: 32px;
 }
 
 .certificate__img{
@@ -125,14 +124,14 @@
 .certificate__list{
     display: flex;
     align-items: center;
-    column-gap: 4px;
+    column-gap: 6px;
     font-family: 'Arial', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 28px;
     color: #000000;
-    margin-bottom: 4px;
+    margin-bottom: 18px;
 }
 
 .certificate__info{
@@ -146,7 +145,7 @@
 }
 
 .certificate__h3{
-    margin: 32px 0 8px;
+    margin: 48px 0 28px;
     font-family: 'Arial', sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -251,4 +250,34 @@
 
 @media (max-width: 600px) {
 
+}
+
+.certificate__block{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.certificate__block-radius{
+    width: 558px;
+    height: 516px;
+    border-radius: 50%;
+    background: #1E005A;
+    text-align: center;
+}
+
+.certificate__block-title{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    margin: 80px 0 30px;
+    color: #FE0000;
+}
+
+.certificate__block-text{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 20px;
+    color: #FFFFFF;
 }

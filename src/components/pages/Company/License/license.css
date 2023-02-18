@@ -4,7 +4,8 @@
 
 .license__content{
     display: flex;
-    align-items: flex-end;
+    align-items: flex-start;
+    justify-content: space-between;
 }
 
 .license__left{
@@ -20,11 +21,15 @@
     color: #1E005A;
 }
 
+.license__right{
+    text-align: center;
+}
+
 .license__text{
     font-family: 'Gotham', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 17px;
+    font-size: 22px;
     line-height: 24px;
     color: #1E005A;
     margin-bottom: 34px;
@@ -32,7 +37,7 @@
 
 .license__img{
     width: 100%;
-    height: 637px;
+    height: 504px;
 }
 
 .license__h3{

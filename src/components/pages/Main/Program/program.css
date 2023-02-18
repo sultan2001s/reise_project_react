@@ -46,6 +46,10 @@
     transition: 1s;
 }
 
+.program__btn_active{
+    background: #1E005A;
+}
+
 .program__line{
     width: 750px;
     border: 2px solid #FE0000;

@@ -1,22 +1,36 @@
 import React from 'react';
+import {motion} from "framer-motion"
 import jobImg from "../../../images/jobImg.png";
 
 import './annual.css'
 
+const textAnimation = {
+    hidden: {
+        x: -40,
+        opacity: 0,
+    },
+    visible: custom => ({
+        x: 0,
+        opacity: 1,
+        transaction: {delay: custom * 0.2},
+    })
+};
+
+
 const Annual = () => {
     return (
         <>
-            <section className="annual">
+            <motion.section className="annual" id="annual" initial="hidden" whileInView="visible">
                 <div className="container">
-                    <div>
+                    <motion.div custom={1} variants={textAnimation}>
                         <svg width="37" height="35" viewBox="0 0 37 35" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M0.00141144 17.5L36.0014 0.612505L36.0014 34.3875L0.00141144 17.5Z" fill="#FE0000"/>
                         </svg>
                         <p className="annual__text">Программа для дипломированных специалистов</p>
                         <div className="annual__line"/>
                         <h2 className="annual__left-title">Годовая работа</h2>
-                    </div>
-                    <div className="annual__content">
+                    </motion.div>
+                    <motion.div custom={1} variants={textAnimation} className="annual__content">
                         <div className="annual__left">
 
                             <div className="annual__info">
@@ -43,19 +57,19 @@ const Annual = () => {
                         <div className="annual__right">
                             <img className="annual__img" src={jobImg} alt="jobImg"/>
                         </div>
-                    </div>
-                    <div className="annual__euro">
+                    </motion.div>
+                    <motion.div custom={1} variants={textAnimation} className="annual__euro">
                         <p className="program__p">- Резюме на немецком языке <br/> (Пример резюме по Europass)</p>
                         <p className="program__p">- Паспорта <br/>(ID, загранпаспорт);</p>
                         <p className="program__p">- Диплом ( с переводом <br/>на нем.язык с нотариальным заверением;</p>
-                    </div>
+                    </motion.div>
                 </div>
-            </section>
+            </motion.section>
 
-            <section className="diploma">
+            <motion.section className="diploma" initial="hidden" whileInView="visible">
                 <div className="container">
-                    <h2 className="diploma__title">Требуется диплом по специальностям:</h2>
-                    <div className="diploma__content">
+                    <motion.h2  custom={1} variants={textAnimation} className="diploma__title">Требуется диплом по специальностям:</motion.h2>
+                    <motion.div  custom={1} variants={textAnimation} className="diploma__content">
                         <ul className="diploma__list">
                             <li className="diploma__item"><div className="diploma__line"/>Строительство (все отрасли)</li>
                             <li className="diploma__item"><div className="diploma__line"/>IT</li>
@@ -78,9 +92,10 @@ const Annual = () => {
                             <li className="diploma__item"><div className="diploma__line"/>Филология немецкого языка</li>
                             <li className="diploma__item"><div className="diploma__line"/>Ресторанное дело и искусство кулинарииа</li>
                         </ul>
-                    </div>
+                    </motion.div>
+                    <motion.button  custom={1} variants={textAnimation} className="diploma__btn">Консультация</motion.button>
                 </div>
-            </section>
+            </motion.section>
         </>
     );
 };

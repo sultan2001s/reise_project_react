@@ -51,6 +51,24 @@
     padding: 4px 4px 4px 4px;
     border-radius: 30px;
     border: 3px solid #FE0000;
+    position: relative;
+}
+
+.course__map-btn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    margin: 217px 90px 0;
+    cursor: pointer;
+    border: none;
+}
+
+.course__map{
+    position: absolute;
+    top: 18%;
+    left: 8%;
 }
 
 .course__card{
@@ -69,5 +87,18 @@
         flex-direction: column;
         align-items: flex-start;
         row-gap: 30px;
+    }
+    .course__map {
+        position: absolute;
+        top: 18%;
+        left: 12%;
+    }
+}
+
+@media (max-width: 500px) {
+    .course__map {
+        position: absolute;
+        top: 18%;
+        left: 12%;
     }
 }

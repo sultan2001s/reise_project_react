@@ -1,8 +1,22 @@
 import React, {useState} from 'react';
+import {motion} from "framer-motion"
 
 import './course.css'
 
 import SliderCourse from "./SliderCourse/SliderCourse";
+
+const textAnimation = {
+    hidden: {
+        x: -40,
+        opacity: 0,
+    },
+    visible: custom => ({
+        x: 0,
+        opacity: 1,
+        transaction: {delay: custom * 0.2},
+    })
+};
+
 
 const Course = () => {
     const [open, setOpen] = useState(false);
@@ -13,16 +27,16 @@ const Course = () => {
         }
     };
     return (
-        <section className="course">
+        <motion.section className="course" initial="hidden" whileInView="visible">
             <div className="container">
                 <div className="course__top">
-                    <h2 className="course__title">Актуальные события </h2>
-                    <p className="course__text">Здесь будут свежие предложения</p>
+                    <motion.h2 custom={1} variants={textAnimation} className="course__title">Актуальные события </motion.h2>
+                    <motion.p custom={2} variants={textAnimation} className="course__text">Здесь будут свежие предложения</motion.p>
                 </div>
-                <div className="course__row">
+                <motion.div custom={2} variants={textAnimation} className="course__row">
                     <SliderCourse/>
-                </div>
-                <button onClick={() => setOpen(true)} className="course__btn">Консультация</button>
+                </motion.div>
+                <motion.button custom={3} variants={textAnimation} onClick={() => setOpen(true)} className="course__btn">Консультация</motion.button>
             </div>
             {
                 open && (
@@ -72,7 +86,7 @@ const Course = () => {
                     </div>
                 )
             }
-        </section>
+        </motion.section>
     );
 };
 

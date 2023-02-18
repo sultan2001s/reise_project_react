@@ -13,24 +13,20 @@
     padding: 0 10px;
 }
 
-@keyframes fade-in {
-    0%{
-        opacity: 0;
-        transform: translateX(-400px);
-    }
-    100%{
-        transform: translateX(0);
-        opacity: 1;
-    }
+
+::-webkit-scrollbar{
+    width: 8px;
 }
 
-@keyframes fade-out {
-    0%{
-        opacity: 1;
-        transform: translateX(0);
-    }
-    100%{
-        transform: translateX(100%);
-        opacity: 0;
-    }
+::-webkit-scrollbar-track{
+    background: #d1e5ff;
+}
+
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(#FE0000, #1E005A);
+    border-radius: 10px;
+}
+
+html {
+    scroll-behavior: smooth;
 }
