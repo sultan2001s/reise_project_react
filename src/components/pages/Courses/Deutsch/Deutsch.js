@@ -1,32 +1,22 @@
-import React from 'react';
-import {motion} from "framer-motion";
+import React, {useContext} from 'react';
 
 import './deutsch.css'
 import deutschImg from '../../../images/deutschImg.png'
-
-const textAnimation = {
-    hidden: {
-        x: -40,
-        opacity: 0,
-    },
-    visible: custom => ({
-        x: 0,
-        opacity: 1,
-        transaction: {delay: custom * 0.2},
-    })
-};
+import {CustomContext} from "../../../../Context";
 
 const Deutsch = () => {
+    const {setOpen} = useContext(CustomContext);
+
     return (
-        <motion.section className="deutsch" initial="hidden" whileInView="visible">
+        <section className="deutsch">
             <div className="container">
-                <motion.h1 custom={1} variants={textAnimation} className="deutsch__title">Почему именно наши курсы?</motion.h1>
-                <motion.p custom={1} variants={textAnimation} className="deutsch__term">Наши преподаватели разрабатывают индивидуальную технику преподавания, <br/>в чем мы их не ограничиваем, поэтому уроки интересные.</motion.p>
-                <motion.div custom={1} variants={textAnimation} className="deutsch__images">
+                <h1 className="deutsch__title">Почему именно наши курсы?</h1>
+                <p className="deutsch__term">Наши преподаватели разрабатывают индивидуальную технику преподавания, <br/>в чем мы их не ограничиваем, поэтому уроки интересные.</p>
+                <div className="deutsch__images">
                     <img className="deutsch__img" src={deutschImg} alt="deutschImg"/>
-                </motion.div>
-                <motion.h1 custom={1} variants={textAnimation} className="deutsch__title">Сколько надо учить язык, чтобы выучить?</motion.h1>
-                <motion.div custom={1} variants={textAnimation} className="deutsch__block">
+                </div>
+                <h1 className="deutsch__title">Сколько надо учить язык, чтобы выучить?</h1>
+                <div className="deutsch__block">
                     <div>
                         <p className="deutsch__text">Конечно это зависит от стараний, времени, которое вы тратите на это, <br/>преподавателя и многое другое...</p>
                         <p className="deutsch__text">НО! Чаще всего это зависит от желания, если вы хотите улететь, <br/>то желание учить у вас точно есть!</p>
@@ -80,10 +70,10 @@ const Deutsch = () => {
                             экзамены.
                         </p>
                     </div>
-                </motion.div>
-                <motion.button custom={1} variants={textAnimation} className="deutsch__btn">Записаться на курс</motion.button>
+                </div>
+                <button onClick={() => setOpen(true)} className="deutsch__btn">Записаться на курс</button>
             </div>
-        </motion.section>
+        </section>
     );
 };
 

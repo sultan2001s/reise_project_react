@@ -1,28 +1,15 @@
 import React from 'react';
-import {motion} from "framer-motion";
 
 import './saturday.css'
 import {FaInstagram} from "react-icons/fa";
 
 import saturdayImg from '../../../images/saturdayImg.png'
 
-const textAnimation = {
-    hidden: {
-        x: -40,
-        opacity: 0,
-    },
-    visible: custom => ({
-        x: 0,
-        opacity: 1,
-        transaction: {delay: custom * 0.2},
-    })
-};
-
 const Saturday = () => {
     return (
-        <motion.section className="saturday" initial="hidden" whileInView="visible">
+        <section className="saturday">
             <div className="container">
-                <motion.div custom={1} variants={textAnimation} className="saturday__content">
+                <div className="saturday__content">
                     <div className="saturday__left">
                         <h2 className="deutsch__title">Sprechen каждую субботу</h2>
                         <p className="saturday__text">
@@ -38,7 +25,7 @@ const Saturday = () => {
                         <p className="saturday__p">Кто будет вести его?</p>
                         <p className="saturday__p">Где посмотреть, как прошел прошлый клуб?</p>
                         <div className="saturday__button">
-                            <button className="saturday__btn"><FaInstagram style={{color: '#FE0000'}}/>@reisekg</button>
+                            <a href="https://www.instagram.com/reisekg/" className="saturday__btn"><FaInstagram style={{color: '#FE0000'}}/>@reisekg</a>
                         </div>
                         <p className="saturday__text">
                             Ответы можно найти здесь, наши менеджера выкладывают <br/>
@@ -48,9 +35,9 @@ const Saturday = () => {
                     <div className="saturday__right">
                         <img className="saturday__img" src={saturdayImg} alt="saturdayImg"/>
                     </div>
-                </motion.div>
+                </div>
             </div>
-        </motion.section>
+        </section>
     );
 };
 

@@ -1,0 +1,77 @@
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #1E005A80;
+}
+
+.login__title{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    color: white;
+    font-size: 32px;
+}
+
+.login__form{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    text-align: center;
+    width: 400px;
+    height: 400px;
+    background: #FE000099;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px 20px;
+    border-radius: 15px;
+    outline: none;
+}
+
+.login__input{
+    width: 100%;
+    height: 50px;
+    font-size: 18px;
+    padding-left: 10px;
+    outline: none;
+    color: #1E005A;
+    border: solid 1px #1E005A;
+    border-radius: 10px;
+}
+
+.login__btn{
+    width: 100%;
+    height: 50px;
+}
+
+.login__btn{
+    cursor: pointer;
+    background: #1E005A;
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+}
+
+.login__btn:hover{
+    background: #FE0000;
+}
+
+.login__span{
+    color: white;
+    text-align: start;
+    font-size: 15px;
+}
+
+.login__account{
+    color: white;
+    font-size: 20px;
+}
+
+.login__acc{
+    color: white;
+    font-size: 20px;
+}
+.login__acc:hover{
+    color: #1E005A;
+}

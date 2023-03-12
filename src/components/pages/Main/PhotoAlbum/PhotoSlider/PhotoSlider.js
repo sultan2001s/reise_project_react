@@ -1,23 +1,14 @@
-import React from 'react';
-import {motion} from "framer-motion"
+import React, {useContext} from 'react';
 
 import {Swiper, SwiperSlide} from "swiper/react";
 import {Autoplay} from "swiper";
-import album1 from "../../../../images/album1.png";
-
-const textAnimation = {
-    hidden: {
-        x: -100,
-        opacity: 0,
-    },
-    visible: custom => ({
-        x: 0,
-        opacity: 1,
-        transaction: {delay: custom * 0.2},
-    })
-};
+import {CustomContext} from "../../../../../Context";
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 const PhotoSlider = () => {
+    const {course} = useContext(CustomContext);
+
     return (
         <>
             <Swiper
@@ -47,16 +38,51 @@ const PhotoSlider = () => {
                 className="mySwiper"
             >
                 <SwiperSlide>
-                    <motion.img  custom={1} variants={textAnimation} className="album__img" src={album1} alt="album1"/>
+                    {
+                        course.map((item, idx) => (
+                            <LazyLoadImage key={idx}
+                                className="album__img"
+                                alt="album1"
+                                effect="blur"
+                                src={`./${item.album}`}/>
+                        ))
+                    }
                 </SwiperSlide>
                 <SwiperSlide>
-                    <motion.img  custom={1} variants={textAnimation} className="album__img" src={album1} alt="album1"/>
+                    {
+                        course.map((item, idx) => (
+                            <LazyLoadImage
+                                key={idx}
+                                className="album__img"
+                                alt="album2"
+                                effect="blur"
+                                src={`./${item.album2}`}/>
+                        ))
+                    }
                 </SwiperSlide>
                 <SwiperSlide>
-                    <motion.img  custom={1} variants={textAnimation} className="album__img" src={album1} alt="album1"/>
+                    {
+                        course.map((item, idx) => (
+                            <LazyLoadImage
+                                key={idx}
+                                className="album__img"
+                                alt="album3"
+                                effect="blur"
+                                src={`./${item.album3}`}/>
+                        ))
+                    }
                 </SwiperSlide>
                 <SwiperSlide>
-                    <motion.img  custom={1} variants={textAnimation} className="album__img" src={album1} alt="album1"/>
+                    {
+                        course.map((item, idx) => (
+                            <LazyLoadImage
+                                key={idx}
+                                className="album__img"
+                                alt="album4"
+                                effect="blur"
+                                src={`./${item.album4}`}/>
+                        ))
+                    }
                 </SwiperSlide>
             </Swiper>
         </>

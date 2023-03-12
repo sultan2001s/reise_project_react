@@ -1,23 +1,41 @@
 import React from 'react';
 import Header from "./Header/Header";
-import {Route, Routes} from "react-router-dom";
+import {Route, Routes, useLocation} from "react-router-dom";
 import Main from "../pages/Main/Main";
 import Courses from "../pages/Courses/Courses";
 import Company from "../pages/Company/Company";
 import Job from "../pages/Job/Job";
 import Footer from "./Footer/Footer";
+import Register from "../pages/Register/Register";
+import Login from "../pages/Login/Login";
+import Admin from "../pages/Admin/Admin";
 
 const Layout = () => {
+    const location = useLocation();
+
     return (
         <>
-            <Header/>
+            {
+                location.pathname !== '/login' && location.pathname !== '/register' && location.pathname !== '/order' ? <Header/> : ''
+            }
+
             <Routes>
                 <Route path='/' element={<Main/>}/>
+                <Route path='/register' element={<Register/>}/>
+                <Route path='/login' element={<Login/>}/>
+                <Route path='/admin' element={<Admin/>}/>
                 <Route path='/courses' element={<Courses/>}/>
                 <Route path='/company' element={<Company/>}/>
                 <Route path='/job' element={<Job/>}/>
             </Routes>
-            <Footer/>
+
+            {
+                   location.pathname === "/login"
+                || location.pathname === "/register"
+                || location.pathname === "/order"
+                || location.pathname === "/admin"
+                    ? '' : <Footer/>
+            }
         </>
     );
 };

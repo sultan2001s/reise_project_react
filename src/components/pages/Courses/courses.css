@@ -108,9 +108,16 @@
         width: 260px;
         height: 53px;
     }
+    .main__icons {
+        margin: 12px 0 28px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        text-align: start;
+    }
 }
 
-@media (max-width: 388px) {
+@media (max-width: 390px) {
     .courses__title {
         font-size: 28px;
         line-height: 31px;
@@ -119,6 +126,9 @@
         font-size: 26px;
         line-height: 35px;
         margin: 22px 0 17px;
+    }
+    .courses__left {
+        margin: 29px 0 65px;
     }
 }
 

@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Наш проект называется reise обучения и трудоустройства в Германию
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Этот проект был запущен с [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 

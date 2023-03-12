@@ -8,7 +8,7 @@
 
 .annual__content{
     display: flex;
-    column-gap: 46px;
+    column-gap: 100px;
 }
 
 .annual__title{
@@ -76,9 +76,9 @@
     font-family: 'Arial', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 17px;
+    font-size: 18px;
     line-height: 28px;
-    color: rgba(0, 0, 0, 0.9);
+    color: #1E005A;
 }
 .annual__btns{
     width: 294px;
@@ -100,9 +100,10 @@
     height: 350px;
 }
 
+
 .annual__info{
     display: flex;
-    column-gap: 130px;
+    column-gap: 90px;
 }
 
 .annual__btns:hover{
@@ -118,15 +119,20 @@
 .diploma__btn{
     width: 294px;
     height: 64px;
-    cursor: pointer;
+    background: #FE0000;
+    border-radius: 15px;
     border: none;
+    cursor: pointer;
     font-weight: 400;
     font-size: 24px;
     line-height: 32px;
-    margin: 56px 0 209px;
     color: #FFFFFF;
-    background: #FE0000;
-    border-radius: 4px;
+    margin: 20px 0 20px;
+}
+
+.diploma__btn:hover{
+    background: #1E005A;
+    transition: 1s;
 }
 
 .annual__text{
@@ -225,6 +231,10 @@
     }
 }
 
+@media (max-width: 425px) {
+
+}
+
 /* diploma*/
 .diploma{
     padding: 13px 0 20px;
@@ -282,3 +292,4 @@
         margin-bottom: 5px;
     }
 }
+

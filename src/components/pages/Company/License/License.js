@@ -1,26 +1,13 @@
 import React from 'react';
-import {motion} from "framer-motion"
 
 import './license.css'
 import permission from '../../../images/permission.png'
 
-const textAnimation = {
-    hidden: {
-        x: -40,
-        opacity: 0,
-    },
-    visible: custom => ({
-        x: 0,
-        opacity: 1,
-        transaction: {delay: custom * 0.2},
-    })
-};
-
 const License = () => {
     return (
-        <motion.section className="license" initial="hidden" whileInView="visible">
+        <section className="license">
             <div className="container">
-                <motion.div custom={2} variants={textAnimation} className="license__content">
+                <div className="license__content">
                     <div className="license__left">
                         <h2 className="license__title">Давайте знакомиться ближе</h2>
                         <p className="license__text">Мы помогаем с работой и учебой всем желающим.</p>
@@ -51,9 +38,9 @@ const License = () => {
                         <h3 className="license__h3">Лицензия ДВМ при МИД 000623</h3>
                         <img className="license__img" src={permission} alt="permission"/>
                     </div>
-                </motion.div>
+                </div>
             </div>
-        </motion.section>
+        </section>
     );
 };
 

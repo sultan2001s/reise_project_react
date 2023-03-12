@@ -1,42 +1,25 @@
-import React, {useState} from 'react';
-import {motion} from "framer-motion"
+import React, {useContext} from 'react';
 
 import './course.css'
 
 import SliderCourse from "./SliderCourse/SliderCourse";
-
-const textAnimation = {
-    hidden: {
-        x: -40,
-        opacity: 0,
-    },
-    visible: custom => ({
-        x: 0,
-        opacity: 1,
-        transaction: {delay: custom * 0.2},
-    })
-};
+import {CustomContext} from "../../../../Context";
 
 
 const Course = () => {
-    const [open, setOpen] = useState(false);
+    const {open, closeOverlay, setOpen} = useContext(CustomContext);
 
-    const closeOverlay = (e) => {
-        if (e.target.classList.contains('overlay')) {
-            setOpen(false)
-        }
-    };
     return (
-        <motion.section className="course" initial="hidden" whileInView="visible">
+        <section className="course">
             <div className="container">
                 <div className="course__top">
-                    <motion.h2 custom={1} variants={textAnimation} className="course__title">Актуальные события </motion.h2>
-                    <motion.p custom={2} variants={textAnimation} className="course__text">Здесь будут свежие предложения</motion.p>
+                    <h2 className="course__title">Актуальные события </h2>
+                    <p className="course__text">Здесь будут свежие предложения</p>
                 </div>
-                <motion.div custom={2} variants={textAnimation} className="course__row">
+                <div className="course__row">
                     <SliderCourse/>
-                </motion.div>
-                <motion.button custom={3} variants={textAnimation} onClick={() => setOpen(true)} className="course__btn">Консультация</motion.button>
+                </div>
+                <button onClick={() => setOpen(true)} className="course__btn">Консультация</button>
             </div>
             {
                 open && (
@@ -86,7 +69,7 @@ const Course = () => {
                     </div>
                 )
             }
-        </motion.section>
+        </section>
     );
 };
 

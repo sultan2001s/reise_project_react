@@ -27,6 +27,12 @@
     row-gap: 30px;
 }
 
+.footer__number{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
 .footer__num{
     color: #FFFFFF;
     font-family: 'Arial', sans-serif;

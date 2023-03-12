@@ -5,7 +5,7 @@
 
 .certificate__content{
     display: flex;
-    column-gap: 46px;
+    column-gap: 100px;
 }
 
 .certificate__title{
@@ -73,9 +73,9 @@
     font-family: 'Arial', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 17px;
+    font-size: 18px;
     line-height: 28px;
-    color: rgba(0, 0, 0, 0.9);
+    color: #1E005A;
 }
 .certificate__btns{
     width: 294px;
@@ -95,6 +95,7 @@
     width: 100%;
     height: 350px;
 }
+
 
 .certificate__btns:hover{
     background: #1E005A;
@@ -136,7 +137,7 @@
 
 .certificate__info{
     display: flex;
-    column-gap: 130px;
+    column-gap: 80px;
 }
 
 .certificate__row{
@@ -170,6 +171,15 @@
     .certificate__p {
         font-size: 15px;
         line-height: 25px;
+    }
+}
+
+@media (max-width: 1088px) {
+    .certificate__block {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
     }
 }
 
@@ -248,9 +258,6 @@
     }
 }
 
-@media (max-width: 600px) {
-
-}
 
 .certificate__block{
     display: flex;
@@ -280,4 +287,27 @@
     line-height: 28px;
     margin-bottom: 20px;
     color: #FFFFFF;
+}
+
+@media (max-width: 498px) {
+    .certificate__block-radius {
+        width: 353px;
+        height: 459px;
+        border-radius: 50%;
+    }
+    .certificate__block-text {
+        font-size: 18px;
+        line-height: 22px;
+        margin-bottom: 13px;
+    }
+    .certificate__list {
+        font-size: 16px;
+        line-height: 28px;
+    }
+}
+
+@media (max-width: 425px) {
+    .certificate__img{
+        height: 300px;
+    }
 }

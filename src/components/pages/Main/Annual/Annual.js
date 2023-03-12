@@ -1,75 +1,62 @@
-import React from 'react';
-import {motion} from "framer-motion"
-import jobImg from "../../../images/jobImg.png";
+import React, {useContext} from 'react';
+import {CustomContext} from "../../../../Context";
 
 import './annual.css'
-
-const textAnimation = {
-    hidden: {
-        x: -40,
-        opacity: 0,
-    },
-    visible: custom => ({
-        x: 0,
-        opacity: 1,
-        transaction: {delay: custom * 0.2},
-    })
-};
+import jobImg from '../Program/programImage/jobImg.png'
+import {LazyLoadImage} from "react-lazy-load-image-component";
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 
 const Annual = () => {
+    const {setOpen} = useContext(CustomContext);
+
     return (
         <>
-            <motion.section className="annual" id="annual" initial="hidden" whileInView="visible">
+            <section className="annual" id="annual">
                 <div className="container">
-                    <motion.div custom={1} variants={textAnimation}>
+                    <div>
                         <svg width="37" height="35" viewBox="0 0 37 35" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M0.00141144 17.5L36.0014 0.612505L36.0014 34.3875L0.00141144 17.5Z" fill="#FE0000"/>
                         </svg>
                         <p className="annual__text">Программа для дипломированных специалистов</p>
                         <div className="annual__line"/>
                         <h2 className="annual__left-title">Годовая работа</h2>
-                    </motion.div>
-                    <motion.div custom={1} variants={textAnimation} className="annual__content">
+                    </div>
+                    <div className="annual__content">
                         <div className="annual__left">
-
                             <div className="annual__info">
-                            <span>
-                                <h4 className="annual__h4">Условия:</h4>
-                                <p className="annual__p">
-                                    - Зарплата 2550 евро в месяц <br/>
-                                    - Проживание 200-350 евро в месяц <br/>
-                                    - Питание зависит от работодателя
-                                </p>
-                            </span>
                                 <span>
-                                <h4 className="annual__h4">Требования:</h4>
-                                <p className="annual__p">
-                                   - Быть выпускником университета с дипломом. <br/>
-                                    - Возраст 18-35 лет <br/>
-                                    - Требуемый уровень В1 <br/>
-                                    (Если нет знания языка - поможем выучить!
-                                </p>
-                            </span>
+                                    <h4 className="annual__h4">Условия:</h4>
+                                    <p className="annual__p">- Зарплата 2550 евро в месяц <br/>- Проживание 200-350 евро в месяц <br/> - Питание зависит от работодателя</p>
+                                </span>
+                                <span>
+                                    <h4 className="annual__h4">Требования:</h4>
+                                    <p className="annual__p">- Быть выпускником университета с дипломом. <br/> - Возраст 18-35 лет- Требуемый уровень В1 <br/> (Если нет знания языка <br/> - поможем выучить!</p>
+                                </span>
                             </div>
                             <h4 className="annual__h4">Перечень необходимых документов:</h4>
                         </div>
                         <div className="annual__right">
-                            <img className="annual__img" src={jobImg} alt="jobImg"/>
+                            <LazyLoadImage
+                                className="annual__img"
+                                alt="jobImg"
+                                src={jobImg}
+                                effect="blur"
+                            />
                         </div>
-                    </motion.div>
-                    <motion.div custom={1} variants={textAnimation} className="annual__euro">
-                        <p className="program__p">- Резюме на немецком языке <br/> (Пример резюме по Europass)</p>
-                        <p className="program__p">- Паспорта <br/>(ID, загранпаспорт);</p>
-                        <p className="program__p">- Диплом ( с переводом <br/>на нем.язык с нотариальным заверением;</p>
-                    </motion.div>
+                    </div>
+                    <div className="annual__euro">
+                        <p className="program__p">- Паспорта (ID и загранпаспорт);</p>
+                        <p className="program__p">- Резюме на немецком языке (Пример резюме по Europass)</p>
+                        <p className="program__p">- Диплом ( с переводом на нем.язык с нотариальным заверением;</p>
+                    </div>
                 </div>
-            </motion.section>
+            </section>
 
-            <motion.section className="diploma" initial="hidden" whileInView="visible">
+            <section className="diploma">
                 <div className="container">
-                    <motion.h2  custom={1} variants={textAnimation} className="diploma__title">Требуется диплом по специальностям:</motion.h2>
-                    <motion.div  custom={1} variants={textAnimation} className="diploma__content">
+                    <h2 className="diploma__title">Требуется диплом по специальностям:</h2>
+                    <div className="diploma__content">
                         <ul className="diploma__list">
                             <li className="diploma__item"><div className="diploma__line"/>Строительство (все отрасли)</li>
                             <li className="diploma__item"><div className="diploma__line"/>IT</li>
@@ -92,10 +79,10 @@ const Annual = () => {
                             <li className="diploma__item"><div className="diploma__line"/>Филология немецкого языка</li>
                             <li className="diploma__item"><div className="diploma__line"/>Ресторанное дело и искусство кулинарииа</li>
                         </ul>
-                    </motion.div>
-                    <motion.button  custom={1} variants={textAnimation} className="diploma__btn">Консультация</motion.button>
+                    </div>
+                    <button className="diploma__btn" onClick={() => setOpen(true)}>Консультация</button>
                 </div>
-            </motion.section>
+            </section>
         </>
     );
 };
