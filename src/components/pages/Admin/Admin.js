@@ -5,6 +5,7 @@ import {CustomContext} from "../../../Context";
 import axios from "axios";
 import {BsPencilFill} from 'react-icons/bs';
 import {ImCross} from 'react-icons/im';
+import {MdDeleteForever} from 'react-icons/md';
 import InputMask from 'react-input-mask'
 
 import './admin.css'
@@ -14,11 +15,11 @@ const Admin = () => {
     const [tab, setTab] = useState(1);
     const [userChange, setUserChange] = useState(false);
     const [passwordChange, setPasswordChange] = useState(false);
+
     const [visible, setVisible] = useState(true);
 
     const removeElement = () => {
         setVisible((prev) => !prev);
-
     };
 
     const {
@@ -63,7 +64,7 @@ const Admin = () => {
                 {
                     tab === 1
                         ? <div>
-                            <div>
+                            <div className="admin__all">
                                 <form onSubmit={handleSubmit(changeUser)} className="admin__content">
                                     <div className="admin__change">
                                         <h3 className='admin__content-title'>Личные данные</h3>
@@ -97,7 +98,8 @@ const Admin = () => {
 
 
                                     {userChange ?
-                                        <button className='admin__info-save' type='submit'>Сохранить изменения</button> : ''}
+                                        <button className='admin__info-save' type='submit'>Сохранить изменения</button> : ''
+                                    }
 
                                 </form>
                                 <form onSubmit={handleSubmit(changePassword)} className='admin__content'>
@@ -151,34 +153,38 @@ const Admin = () => {
                                 user.orders.map((item, idx) => (
                                     <div className="admin__history" key={idx}>
                                         {
-                                            visible && (
-                                                <div className="admin__row">
-                                                    <div>
-                                                        <h3>Имя</h3>
-                                                        <p>{item.name}</p>
-                                                        <span>{item.date}</span>
-                                                    </div>
-                                                    <div>
-                                                        <h3>Фамилия</h3>
-                                                        <p>{item.surname}</p>
-                                                    </div>
-                                                    <div>
-                                                        <h3>Instagram</h3>
-                                                        <p>{item.social}</p>
-                                                    </div>
-                                                    <div>
-                                                        <h3>Номер телефона</h3>
-                                                        <p>{item.phone}</p>
-                                                    </div>
-                                                    <div>
-                                                        <h3>Ваш вопрос</h3>
-                                                        <p>{item.message}</p>
-                                                    </div>
-                                                    <div>
-                                                        <button type="button" onClick={removeElement}>удалить</button>
-                                                    </div>
+                                            visible &&
+                                            <div className="admin__row">
+                                                <div>{item.date}</div>
+                                                <div>
+                                                    <h3>Имя</h3>
+                                                    <p>{item.name}</p>
                                                 </div>
-                                            )
+                                                <div>
+                                                    <h3>Фамилия</h3>
+                                                    <p>{item.surname}</p>
+                                                </div>
+                                                <div>
+                                                    <h3>Instagram</h3>
+                                                    <p> {item.social}</p>
+                                                </div>
+                                                <div>
+                                                    <h3>Номер телефона</h3>
+                                                    <p>  {item.phone}</p>
+                                                </div>
+                                                <div>
+                                                    <h3>Ваш вопрос</h3>
+                                                    <p>{item.message}</p>
+                                                </div>
+                                                <div>
+                                                    <h3>О себе</h3>
+                                                    <p>{item.comments}</p>
+                                                </div>
+                                                <div>
+                                                    <button className="admin__delete" onClick={removeElement}><MdDeleteForever/></button>
+
+                                                </div>
+                                            </div>
                                         }
                                     </div>
                                 ))

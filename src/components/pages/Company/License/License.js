@@ -13,8 +13,8 @@ const License = () => {
                         <p className="license__text">Мы помогаем с работой и учебой всем желающим.</p>
                         <p className="license__text">
                             С каждым годом, мы <span style={{color: '#FE0000'}}>улучшаем</span> качество нашей работы, <br/>
-                            отбираем только <span style={{color: '#FE0000'}}>достойных</span> <br/>
-                            работодателей, <span style={{color: '#FE0000'}}>добавляем</span> новые вакансии.
+                            отбираем только <span style={{color: '#FE0000'}}>достойных </span>
+                            работодателей, <span style={{color: '#FE0000'}}>добавляем</span> новые<br/> вакансии.
                         </p>
                         <p className="license__text">
                             Разберем чем мы занимаемся? Мы консультируем и помогаем <br/>
@@ -23,18 +23,18 @@ const License = () => {
                             занимаем очередь в посольстве.
                         </p>
                         <p className="license__text">
-                            Помимо этого мы предоставляем <span style={{color: '#FE0000'}}>полное</span> визовое <br/> сопровождение, медицинскую <span style={{color: '#FE0000'}}>страховку</span>, остаемся на связи <br/>
+                            Помимо этого мы предоставляем <span style={{color: '#FE0000'}}>полное</span> визовое <br/> сопровождение, остаемся на связи <br/>
                             с Вами на протяжение всего Вашего пребывания в Германии. <br/>
                             Находим <span style={{color: '#FE0000'}}>подход</span> к каждому клиенту.
                         </p>
                         <p className="license__text">
-                            У нас есть курсы немецкого языка и <span style={{color: '#FE0000'}}>мы заинтересованы</span>, <br/> чтобы Вы знали язык и создали все условия для комфортного <br/> обучения.
+                            У нас есть курсы немецкого языка, и <span style={{color: '#FE0000'}}>мы заинтересованы</span>, <br/> чтобы Вы знали язык и создали все условия для комфортного <br/> обучения.
                         </p>
 
                     </div>
                     <div className="license__right">
-                        <h2 className="license__title" style={{fontSize: '17px'}}>с 2011 года</h2>
-                        <p className="">Наша компания работает легально</p>
+                        {/*<h2 className="license__title" style={{fontSize: '17px'}}>с 2011 года</h2>*/}
+                        {/*<p className=""></p>*/}
                         <h3 className="license__h3">Лицензия ДВМ при МИД 000623</h3>
                         <img className="license__img" src={permission} alt="permission"/>
                     </div>

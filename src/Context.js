@@ -8,24 +8,13 @@ export const CustomContext = createContext();
 export const Context = (props) => {
 
     const navigate = useNavigate();
+    const [burger, setBurger] = useState(false);
     const [openJob, setOpenJob] = useState(false);
     const [tab, setTab] = useState(1);
     const [order, setOrder] = useState(false);
-    const [open, setOpen] = useState(false);
-
-    const closeOverlay = (e) => {
-        if (e.target.classList.contains('overlay')) {
-            setOpen(false)
-        }
-    };
+   
     const toggleTab = (index) => {
         setTab(index)
-    };
-
-    const [course, setCourse] = useState([]);
-    const getCourse = () => {
-        axios('http://localhost:8080/course')
-            .then(({data}) => setCourse(data))
     };
 
     const [user, setUser] = useState({
@@ -37,12 +26,11 @@ export const Context = (props) => {
             setUser(JSON.parse(localStorage.getItem('user')))
         }
 
-        getCourse();
     }, []);
 
-    // useEffect(() => {
-    //     localStorage.setItem('user', JSON.stringify(user));
-    // }, [user.orders]);
+    useEffect(() => {
+        localStorage.setItem('user', JSON.stringify(user));
+    }, [user.orders]);
 
     const registerUser = (data) => {
         axios.post('http://localhost:8080/register', {...data, orders: []})
@@ -63,19 +51,22 @@ export const Context = (props) => {
     };
 
     const logOutAdmin = () => {
-        localStorage.removeItem('user');
-        setUser({
-            login: ''
-        })
+        if (window.confirm('ты точно хочешь выйти?')) {
+            localStorage.removeItem('user');
+            setUser({
+                login: ''
+            })
+        } else {
+            return ''
+        }
+
     };
 
     const value = {
         user,
         setUser,
-        open,
-        setOpen,
-        course,
-        setCourse,
+        burger,
+        setBurger,
         tab,
         setTab,
         order,
@@ -85,8 +76,6 @@ export const Context = (props) => {
         registerUser,
         logOutAdmin,
         loginAdmin,
-        closeOverlay,
-        getCourse,
         toggleTab,
     };
 

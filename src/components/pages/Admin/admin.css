@@ -2,6 +2,10 @@
     padding: 40px 0 40px;
 }
 
+.admin__all{
+
+}
+
 .admin__title{
     font-family: 'Gotham', sans-serif;
     font-style: normal;
@@ -9,6 +13,14 @@
     font-size: 35px;
     line-height: 40px;
     color: #1E005A;
+}
+
+.delete__btn{
+    padding: 5px 5px 5px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 25px;
 }
 
 .admin__top{
@@ -62,7 +74,7 @@
 }
 
 .admin__content{
-    width: 850px;
+    width: 400px;
     margin: 0 auto;
     padding: 30px;
     border: 1px solid #1E005A;
@@ -70,6 +82,7 @@
     border-radius: 12px;
     margin-top: 30px;
 }
+
 
 .admin__change{
     display: flex;
@@ -79,7 +92,6 @@
 }
 
 .admin__info{
-    display: flex;
     column-gap: 32px;
 }
 
@@ -88,9 +100,6 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 22px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     color: #FFFFFF;
     width: 246px;
     height: 48px;
@@ -114,14 +123,14 @@
     font-family: 'Gotham', sans-serif;
     font-style: normal;
     font-weight: 400;
-      font-size: 16px;
-      line-height: 22px;
-      display: flex;
-      align-items: center;
-      text-align: center;
-      color: #FE0000;
-      column-gap: 17px;
-      cursor: pointer;
+    font-size: 16px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FE0000;
+    column-gap: 17px;
+    cursor: pointer;
 }
 
 .admin__info-about{
@@ -129,7 +138,6 @@
     font-size: 16px;
     line-height: 22px;
     display: flex;
-    align-items: center;
     color: #191919;
     flex-direction: column;
     row-gap: 5px;
@@ -181,4 +189,29 @@
     .admin__title {
         font-size: 27px;
     }
+}
+
+
+@media (max-width: 992px) {
+    .admin__row {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+    .admin__delete{
+        font-size: 25px;
+        background: #FE0000;
+        color: #ffffff;
+        width: 150px;
+        height: 40px;
+        border: none;
+        cursor: pointer;
+        border-radius: 12px;
+    }
+}
+
+.admin__delete{
+    font-size: 25px;
+    border: none;
+    cursor: pointer;
 }

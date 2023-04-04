@@ -116,8 +116,8 @@
     .footer__content {
         flex-direction: column;
         row-gap: 30px;
-        justify-content: flex-start;
-        margin-left: -64px;
+        margin-left: 80px;
+        align-items: start;
     }
     .footer__title {
         font-size: 25px;

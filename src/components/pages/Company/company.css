@@ -1,6 +1,30 @@
 .company{
     background: url("../../images/companyImg.png") 100% 100% / cover;
+    /*animation-name: animate;*/
+    /*transition: 5s;*/
+
+    /*animation-duration: 30s;*/
+    /*animation-direction: alternate-reverse;*/
+    /*animation-fill-mode: forwards;*/
+    /*animation-iteration-count: infinite;*/
+    /*animation-play-state: running;*/
+    /*animation-timing-function: ease-in-out;*/
 }
+
+/*@keyframes animate {*/
+/*    0% {*/
+/*        background-image: url("../../images/reiseFon.png");*/
+/*    }*/
+/*    20% {*/
+/*        background-image: url("../../images/companyImg.png");*/
+/*    }*/
+/*    40% {*/
+/*        background-image: url("../../images/coursesImg.png");*/
+/*    }*/
+/*    60% {*/
+/*        background-image: url("../../images/germany-fon.jpg");*/
+/*    }*/
+/*}*/
 
 .company__content{
     display: flex;
@@ -23,7 +47,7 @@
 
 
 .company__icons{
-    margin: 65px 0 600px;
+    margin: 65px 0 293px;
 }
 
 .company__btn{

@@ -1,12 +1,21 @@
-import React, {useContext} from 'react';
-import {Swiper, SwiperSlide} from "swiper/react";
-import {Autoplay} from "swiper";
-import {CustomContext} from "../../../../../Context";
+import React from 'react';
+import { Swiper, SwiperSlide } from "swiper/react";
+
+import "swiper/css";
+
+import "./workSlider.css";
+
+import img4 from '../../../../images/img4.png'
+import img3 from '../../../../images/img3.png'
+import img2 from '../../../../images/img2.png'
+import img1 from '../../../../images/img1.png'
+
+import { Autoplay } from "swiper";
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 
-const WorkSlider = () => {
-    const {course} = useContext(CustomContext);
+
+const SliderCourse = () => {
 
     return (
         <>
@@ -37,59 +46,40 @@ const WorkSlider = () => {
                 className="mySwiper"
             >
                 <SwiperSlide>
-                    {
-                        course.map((item, idx) => (
-                            <LazyLoadImage key={idx}
-                                className="img__i"
-                                alt="img1"
-                                src={item.images1}
-                                effect="blur"
-                            />
-                        ))
-                    }
+                    <LazyLoadImage
+                        className="img__i"
+                        alt="img1"
+                        src={img1}
+                        effect="blur"
+                    />
                 </SwiperSlide>
                 <SwiperSlide>
-                    {
-                        course.map((item, idx) => (
-                            <LazyLoadImage
-                                key={idx}
-                                className="img__i"
-                                alt="img2"
-                                src={item.images2}
-                                effect="blur"
-                            />
-                        ))
-                    }
+                    <LazyLoadImage
+                        className="img__i"
+                        alt="img2"
+                        src={img2}
+                        effect="blur"
+                    />
                 </SwiperSlide>
                 <SwiperSlide>
-                    {
-                        course.map((item, idx) => (
-                            <LazyLoadImage
-                                key={idx}
-                                className="img__i"
-                                alt="img3"
-                                src={item.images3}
-                                effect="blur"
-                            />
-                        ))
-                    }
+                    <LazyLoadImage
+                        className="img__i"
+                        alt="img3"
+                        src={img3}
+                        effect="blur"
+                    />
                 </SwiperSlide>
                 <SwiperSlide>
-                    {
-                        course.map((item, idx) => (
-                            <LazyLoadImage
-                                key={idx}
-                                className="img__i"
-                                alt="img4"
-                                src={item.images4}
-                                effect="blur"
-                            />
-                        ))
-                    }
+                    <LazyLoadImage
+                        className="img__i"
+                        alt="img4"
+                        src={img4}
+                        effect="blur"
+                    />
                 </SwiperSlide>
             </Swiper>
         </>
     );
 };
 
-export default WorkSlider;
+export default SliderCourse;

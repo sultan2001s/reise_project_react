@@ -2,6 +2,7 @@ import React, {useContext, useRef} from 'react';
 import {CustomContext} from "../../../Context";
 import {Link} from "react-router-dom";
 import {useForm} from 'react-hook-form'
+import InputMask from "react-input-mask";
 import './register.css'
 
 const Register = () => {
@@ -33,7 +34,11 @@ const Register = () => {
                     required : 'Пожалуйста, заполните это поле *',
                 })} className="register__input" type="text" placeholder='Введите login'/>
                 <span className="register__span">{errors?.login?.message}</span>
-                <input id='3' {...register('password', {
+                <InputMask id='3' {...register('phone', {
+                    required : 'Пожалуйста, заполните это поле *',
+                })} className="register__input" placeholder="+996554467895" type="tel" mask={`+\\9\\96(999)99-99-99`}/>
+                <span className="register__span">{errors?.phone?.message}</span>
+                <input id='4' {...register('password', {
                     required: 'Пожалуйста, заполните это поле *',
                     minLength: {
                         value: 6,
@@ -41,7 +46,7 @@ const Register = () => {
                     }
                 })} className="register__input" type="password" placeholder='Введите пароль'/>
                 <span className="register__span">{errors?.password?.message}</span>
-                <input id='4' {...register('confirmPwd', {
+                <input id='5' {...register('confirmPwd', {
                     validate: value =>
                         value === password.current || "Пароль не подходит"
                 })} className="register__input" type="password" placeholder='Подвердите пароль'/>
