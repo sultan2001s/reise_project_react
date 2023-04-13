@@ -7,18 +7,24 @@ import './header.css'
 import logo from './logo.png'
 import Overlay from "../../pages/Overlay/Overlay";
 
+
 const Header = () => {
     const {user} = useContext(CustomContext);
     const [open, setOpen] = useState(false);
     const {openJob, burger, setBurger} = useContext(CustomContext);
 
-    return (
+    const closeCart = (e) => {
+        if (e.target.class === 'header__burger') {
 
+        }
+    };
+
+    return (
         <header className="header">
             <div className="container">
                 <nav className="header__nav">
                     <Link to='/'><img className="header__img" src={logo} alt="logo"/></Link>
-                    <ul className={`header__list ${burger ? 'header__list_active' : ''}`}>
+                    <ul onClick={closeCart} className={`header__list ${burger ? 'header__list_active' : ''}`}>
                         <NavLink to='/' className="header__link">На главную</NavLink>
                         <NavLink to='/program' className="header__link">Наши программы</NavLink>
                         <li onClick={() => setOpen(!openJob)} className="header__link">Консультация</li>
@@ -27,7 +33,7 @@ const Header = () => {
                         <li className="header__link">
                             {
                                 user.login.length
-                                    ? <NavLink to='/admin' className="header__link">Администратор</NavLink>
+                                    ? <NavLink to='/admin' className="header__link">Администрация</NavLink>
                                     : <NavLink to='/login' className="header__link">Войти</NavLink>
                             }
                         </li>
@@ -37,6 +43,7 @@ const Header = () => {
                     </div>
                 </nav>
             </div>
+
             <Overlay overlayActive={open} setOverlayActive={setOpen}/>
         </header>
     );

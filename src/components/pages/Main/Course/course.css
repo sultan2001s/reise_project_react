@@ -42,8 +42,7 @@
 }
 
 .course__btn:hover{
-    background: #1E005A;
-    transition: 1s;
+    background: #FE000090;
 }
 
 .course__img{
@@ -62,14 +61,15 @@
 .course__map-btn{
     display: flex;
     flex-direction: column;
+    row-gap: 10px;
     justify-content: center;
     align-items: center;
     background: transparent;
     position: absolute;
     cursor: pointer;
     border: none;
-    bottom: 40px;
-    left: 110px;
+    bottom: 20px;
+    left: 90px;
 }
 
 

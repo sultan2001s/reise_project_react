@@ -1,6 +1,6 @@
 .official{
     padding: 40px 0 106px;
-    background: url("../../../images/officialBg.png") center/cover no-repeat;
+    background: url("../../../images/officialBg.png") center/cover no-repeat fixed;
 }
 
 .official__title{

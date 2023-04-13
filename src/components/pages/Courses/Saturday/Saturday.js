@@ -13,7 +13,7 @@ const Saturday = () => {
                     <div className="saturday__left">
                         <h2 className="deutsch__title">Sprechen каждую неделю</h2>
                         <p className="saturday__text">
-                            Мы проводим разговорный клуб, <br/>
+                            Мы проводим бесплатный разговорный клуб для наших студентов, <br/>
                             на котором можно практиковать свой немецкий язык.
                         </p>
                         <p className="saturday__text">

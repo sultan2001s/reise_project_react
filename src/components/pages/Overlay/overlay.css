@@ -287,3 +287,36 @@
         cursor: pointer;
     }
 }
+
+@media (max-width: 330px) {
+    .overlay__title {
+        font-size: 15px;
+        line-height: 27px;
+        margin: 0 0 1px;
+    }
+    .overlay__text {
+        font-size: 11px;
+        line-height: 22px;
+        margin-bottom: 1px;
+    }
+    .overlay__input {
+        border-radius: 7px;
+        width: 280px;
+        height: 34px;
+        font-size: 14px;
+        padding-left: 8px;
+    }
+    .overlay__input2 {
+        width: 280px;
+        height: 71px;
+        border-radius: 7px;
+        font-size: 14px;
+        padding-left: 8px;
+    }
+    .overlay__btn {
+        width: 197px;
+        height: 38px;
+        font-size: 16px;
+        margin-top: 9px;
+    }
+}

@@ -4,8 +4,9 @@
 
 .album__card{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    column-gap: 32px;
+    gap: 32px;
     margin: 32px 0 32px;
     filter: drop-shadow(0 0 0.50rem #1E005A) ;
 }

@@ -8,6 +8,10 @@
     justify-content: space-between;
 }
 
+.paris-image{
+    display: none;
+}
+
 .paris__text{
     margin-bottom: 32px;
     font-family: 'Gotham', sans-serif;
@@ -19,7 +23,7 @@
 }
 
 .paris__img{
-    width: 100%;
+    width: 500px;
 }
 
 .paris__btn{
@@ -90,3 +94,5 @@
     }
 
 }
+
+/**/

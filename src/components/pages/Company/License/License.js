@@ -1,7 +1,9 @@
 import React from 'react';
+import 'photoswipe/dist/photoswipe.css'
 
 import './license.css'
 import permission from '../../../images/permission.png'
+
 
 const License = () => {
     return (
@@ -23,18 +25,15 @@ const License = () => {
                             занимаем очередь в посольстве.
                         </p>
                         <p className="license__text">
-                            Помимо этого мы предоставляем <span style={{color: '#FE0000'}}>полное</span> визовое <br/> сопровождение, остаемся на связи <br/>
-                            с Вами на протяжение всего Вашего пребывания в Германии. <br/>
+                            Помимо этого мы предоставляем <span style={{color: '#FE0000'}}>полное</span> визовое  сопровождение.<br/>
                             Находим <span style={{color: '#FE0000'}}>подход</span> к каждому клиенту.
                         </p>
                         <p className="license__text">
-                            У нас есть курсы немецкого языка, и <span style={{color: '#FE0000'}}>мы заинтересованы</span>, <br/> чтобы Вы знали язык и создали все условия для комфортного <br/> обучения.
+                            А так же у нас есть курсы немецкого языка. <span style={{color: '#FE0000'}}>На них мы эффективно </span> <br/> подготовим Вас к нашим программам.
                         </p>
 
                     </div>
                     <div className="license__right">
-                        {/*<h2 className="license__title" style={{fontSize: '17px'}}>с 2011 года</h2>*/}
-                        {/*<p className=""></p>*/}
                         <h3 className="license__h3">Лицензия ДВМ при МИД 000623</h3>
                         <img className="license__img" src={permission} alt="permission"/>
                     </div>

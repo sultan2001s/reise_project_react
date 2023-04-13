@@ -1,41 +1,22 @@
 .courses{
-    background: url("../../images/coursesImg.png") 100% 100% /cover;
-    /*animation-name: animate;*/
-    /*transition: 5s;*/
-
-    /*animation-duration: 30s;*/
-    /*animation-direction: alternate-reverse;*/
-    /*animation-fill-mode: forwards;*/
-    /*animation-iteration-count: infinite;*/
-    /*animation-play-state: running;*/
-    /*animation-timing-function: ease-in-out;*/
+    background: url("../../images/panorama.jpg") 100% 100% /cover fixed;
 }
 
-/*@keyframes animate {*/
-/*    0% {*/
-/*        background-image: url("../../images/reiseFon.png");*/
-/*    }*/
-/*    20% {*/
-/*        background-image: url("../../images/companyImg.png");*/
-/*    }*/
-/*    40% {*/
-/*        background-image: url("../../images/coursesImg.png");*/
-/*    }*/
-/*    60% {*/
-/*        background-image: url("../../images/germany-fon.jpg");*/
-/*    }*/
-/*}*/
-
-.courses__content{
+.courses__content {
     display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 
+.courses__left{
+    margin: 224px 0 374px;
+}
+
 .courses__icons{
-    margin: 70px 0 800px;
+    margin: 86px 0 350px;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 10px;
 }
 
 .courses__icon{
@@ -44,9 +25,6 @@
     cursor: pointer;
 }
 
-.courses__left{
-    margin: 225px 0 380px;
-}
 .courses__title{
     font-family: 'Arial', sans-serif;
     font-style: normal;

@@ -16,7 +16,7 @@ const Deutsch = () => {
                     <div className="deutsch__images">
                         <img className="deutsch__img" src={deutschImg} alt="deutschImg"/>
                     </div>
-                    <h1 className="deutsch__title">Сколько надо учить язык, чтобы выучить?</h1>
+                    <h1 className="deutsch__title">Сколько надо учить язык, чтобы получить необходимый уровень?</h1>
                     <div className="deutsch__block">
                         <div>
                             <p className="deutsch__text">Конечно это зависит от стараний, времени, которое вы тратите на это, <br/>преподавателя и многое другое...</p>

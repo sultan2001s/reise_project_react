@@ -1,4 +1,5 @@
 import React from 'react';
+import { Gallery } from 'react-photoswipe-gallery'
 
 import SliderBgr from "./SliderBgr";
 
@@ -7,7 +8,9 @@ const FacesBgr = () => {
         <section>
             <div className="container">
                 <div className="work__list">
-                    <SliderBgr/>
+                    <Gallery>
+                        <SliderBgr/>
+                    </Gallery>
                 </div>
             </div>
         </section>
