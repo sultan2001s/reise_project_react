@@ -1,12 +1,15 @@
-import React from "react";
+import React, {Suspense} from "react";
 import Layout from "./components/Layout/Layout";
+
 
 function App() {
 
   return (
-    <>
-        <Layout/>
-    </>
+    <Suspense fallback={'Loading...'}>
+        <div>
+            <Layout/>
+        </div>
+    </Suspense>
   );
 }
 

@@ -25,12 +25,11 @@ export const Context = (props) => {
         if (localStorage.getItem('user') !== null) {
             setUser(JSON.parse(localStorage.getItem('user')))
         }
-
     }, []);
 
     useEffect(() => {
         localStorage.setItem('user', JSON.stringify(user));
-    }, [user.orders]);
+    }, [user]);
 
     const registerUser = (data) => {
         axios.post('http://localhost:8080/register', {...data, orders: []})

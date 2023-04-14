@@ -1,7 +1,5 @@
-import React, {useEffect, useState} from 'react';
+import React, {useState} from 'react';
 import {Gallery} from 'react-photoswipe-gallery'
-// import AOS from 'aos'
-// import 'aos/dist/aos.css'
 
 import './course.css'
 
@@ -12,10 +10,6 @@ import SliderCourse from "./SliderCourse/SliderCourse";
 
 const Course = () => {
     const [open, setOpen] = useState(false);
-
-    // useEffect(() => {
-    //     AOS.init({duration: 2000});
-    // }, []);
 
     return (
         <section className="course active">

@@ -16,6 +16,13 @@ const Admin = () => {
     const [userChange, setUserChange] = useState(false);
     const [passwordChange, setPasswordChange] = useState(false);
 
+    // const [admin, setAdmin] = useState([]);
+    //
+    // const onRemoveItem = (id) => {
+    //     axios.post(`http://localhost:8080/orders/${id}`);
+    //     setAdmin(admin.filter(item => item.id !== id));
+    // };
+
     const {
         register,
         formState: {
@@ -171,6 +178,7 @@ const Admin = () => {
                                                 <h3>О себе</h3>
                                                 <p>{item.comments}</p>
                                             </div>
+                                            {/*<button>Delete</button>*/}
                                         </div>
                                     </div>
                                 ))

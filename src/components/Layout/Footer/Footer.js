@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import './footer.css'
 import {FaInstagram, FaFacebook} from "react-icons/fa";
 import { ImWhatsapp } from 'react-icons/im';

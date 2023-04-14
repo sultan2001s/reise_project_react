@@ -1,17 +1,13 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 
 import cart from '../../../images/cart.png'
 import cart2 from '../../../images/cart2.png'
 import cart3 from '../../../images/cart3.png'
 
 import './official.css'
-// import AOS from "aos";
-// import 'aos/dist/aos.css'
+
 
 const Official = () => {
-    // useEffect(() => {
-    //     AOS.init({duration: 2000});
-    // }, []);
 
     return (
         <section className="official">

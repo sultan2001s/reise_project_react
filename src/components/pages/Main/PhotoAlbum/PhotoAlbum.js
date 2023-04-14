@@ -1,17 +1,12 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import { Gallery } from 'react-photoswipe-gallery'
 
 import './album.css'
 
 import AlbumSlider from './AlbumSlider/AlbumSlider'
-// import AOS from "aos";
-// import 'aos/dist/aos.css'
 
 
 const PhotoAlbum = () => {
-    // useEffect(() => {
-    //     AOS.init({duration: 2000});
-    // }, []);
 
     return (
         <section className="album">
