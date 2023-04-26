@@ -8,105 +8,31 @@
       "confirmPwd": "admin2001",
       "orders": [
         {
-          "name": "asdasda",
-          "surname": "adsdasd",
-          "social": "asdasd",
-          "phone": "+996(222)22-22-22",
-          "message": "sacsacas",
-          "comments": "sacascas",
-          "date": "3.4.2023"
-        },
-        {
-          "name": "dsfcdsfsd",
-          "surname": "dsfdsfsdfs",
-          "social": "sdfsdfsd",
-          "phone": "+996(553)43-24-23",
-          "message": "sdfcdssd",
-          "comments": "dsvcds",
-          "date": "3.4.2023"
-        },
-        {
           "name": "Sultan",
           "surname": "Sherimbekov",
-          "social": "sultan",
-          "phone": "+996(553)22-21-22",
-          "message": "ыфвфвфы",
-          "comments": "фывфыыв",
-          "date": "3.4.2023"
-        },
-        {
-          "name": "Арлен",
-          "surname": "Арлен",
           "social": "luffy_01_kg_00",
-          "phone": "+996(552)34-12-13",
-          "message": "ewrewnwein ",
-          "comments": "nakfniaewfa",
-          "date": "4.4.2023"
+          "phone": "+996(778)74-54-56",
+          "message": "asdxzcz",
+          "comments": "asdzxczxas",
+          "date": "17.4.2023"
         },
         {
-          "name": "цувыа",
-          "surname": "цуке",
-          "social": "12345екуцй",
-          "phone": "+996(123)45-67-54",
-          "message": "укапавыф",
-          "comments": "ывсапропавыф\n",
-          "date": "4.4.2023"
-        },
-        {
-          "name": "ыц",
-          "surname": "фыв",
-          "social": "123",
-          "phone": "+996(321)23-44-53",
-          "message": "1324",
-          "comments": "2345432",
-          "date": "4.4.2023"
-        },
-        {
-          "name": "Sultan",
-          "email": "admin@mail.ru",
-          "phone": "+996(345)67-89-98",
-          "country": "dzfsd",
-          "city": "BISHKEK ",
-          "street": "zdcvz",
-          "house": "xcvx",
-          "flat": "e3w",
-          "message": "xcvxcv",
-          "clothes": [
-            {
-              "id": 3,
-              "title": "Hoody Anime",
-              "image": {
-                "black": "Shop/hoody3.jpg",
-                "white": "Shop/hoody3-white.jpg",
-                "grey": "Shop/hoody3-grey.jpg"
-              },
-              "color": "white",
-              "size": "s",
-              "count": 1,
-              "price": 400,
-              "category": "hoody"
-            }
-          ],
-          "price": 380,
-          "date": "2023-04-04T15:00:56.635Z"
+          "name": "Асыл",
+          "surname": "Асыл",
+          "social": "asyl",
+          "phone": "+996(556)52-12-33",
+          "message": "sdfdsd",
+          "comments": "sdfdssd",
+          "date": "17.4.2023"
         },
         {
           "name": "Sultan",
           "surname": "Sherimbekov",
           "social": "luffy_01_kg_00",
-          "phone": "+996(555)44-32-22",
-          "message": "dsscsdcs sd",
-          "comments": "csdcsd csdc",
-          "date": "5.4.2023"
-        },
-        {
-          "name": "Suli",
-          "surname": "Sherimbekov",
-          "social": "luffy_01_kg_00",
-          "phone": "+996(553)22-22-22",
-          "message": "sdasdsa",
-          "comments": "dasdad",
-          "date": "13.4.2023"
+          "phone": "+996(778)75-55-12",
+          "message": "wedwe",
+          "comments": "ewfwe\n",
+          "date": "21.4.2023"
         }
       ],
       "id": 1
@@ -114,470 +40,89 @@
   ],
   "orders": [
     {
-      "name": "asdasda",
-      "surname": "adsdasd",
-      "social": "asdasd",
-      "phone": "+996(222)22-22-22",
-      "message": "sacsacas",
-      "comments": "sacascas",
+      "name": "Sultan",
+      "surname": "Sherimbekov",
+      "social": "luffy_01_kg_00",
+      "phone": "+996(778)74-54-56",
+      "message": "asdxzcz",
+      "comments": "asdzxczxas",
       "user": {
         "email": "admin@mail.ru",
         "login": "sultan",
         "phone": "+996(554)56-54-54",
-        "confirmPwd": "qwerty",
+        "confirmPwd": "admin2001",
         "orders": [],
         "id": 1
       },
-      "date": "3.4.2023",
+      "date": "17.4.2023",
       "id": 1
     },
     {
-      "name": "dsfcdsfsd",
-      "surname": "dsfdsfsdfs",
-      "social": "sdfsdfsd",
-      "phone": "+996(553)43-24-23",
-      "message": "sdfcdssd",
-      "comments": "dsvcds",
+      "name": "Асыл",
+      "surname": "Асыл",
+      "social": "asyl",
+      "phone": "+996(556)52-12-33",
+      "message": "sdfdsd",
+      "comments": "sdfdssd",
       "user": {
         "email": "admin@mail.ru",
-        "password": "$2a$10$Gg.ZMaPOMEONUGfr.zm8ae2.9clH4/e1Cf075THhzWgrAJr1FeFM6",
+        "password": "$2a$10$PII5mixRfTMeeaawTs7Tb.7VKjSiAQg.ps2330lqyjjJvcsOfQGLO",
         "login": "sultan",
         "phone": "+996(554)56-54-54",
-        "confirmPwd": "qwerty",
+        "confirmPwd": "admin2001",
         "orders": [
           {
-            "name": "asdasda",
-            "surname": "adsdasd",
-            "social": "asdasd",
-            "phone": "+996(222)22-22-22",
-            "message": "sacsacas",
-            "comments": "sacascas",
-            "date": "3.4.2023"
+            "name": "Sultan",
+            "surname": "Sherimbekov",
+            "social": "luffy_01_kg_00",
+            "phone": "+996(778)74-54-56",
+            "message": "asdxzcz",
+            "comments": "asdzxczxas",
+            "date": "17.4.2023"
           }
         ],
         "id": 1
       },
-      "date": "3.4.2023",
+      "date": "17.4.2023",
       "id": 2
     },
     {
       "name": "Sultan",
       "surname": "Sherimbekov",
-      "social": "sultan",
-      "phone": "+996(553)22-21-22",
-      "message": "ыфвфвфы",
-      "comments": "фывфыыв",
+      "social": "luffy_01_kg_00",
+      "phone": "+996(778)75-55-12",
+      "message": "wedwe",
+      "comments": "ewfwe\n",
       "user": {
         "email": "admin@mail.ru",
+        "password": "$2a$10$PII5mixRfTMeeaawTs7Tb.7VKjSiAQg.ps2330lqyjjJvcsOfQGLO",
         "login": "sultan",
         "phone": "+996(554)56-54-54",
-        "confirmPwd": "qwerty",
+        "confirmPwd": "admin2001",
         "orders": [
           {
-            "name": "asdasda",
-            "surname": "adsdasd",
-            "social": "asdasd",
-            "phone": "+996(222)22-22-22",
-            "message": "sacsacas",
-            "comments": "sacascas",
-            "date": "3.4.2023"
+            "name": "Sultan",
+            "surname": "Sherimbekov",
+            "social": "luffy_01_kg_00",
+            "phone": "+996(778)74-54-56",
+            "message": "asdxzcz",
+            "comments": "asdzxczxas",
+            "date": "17.4.2023"
           },
           {
-            "name": "dsfcdsfsd",
-            "surname": "dsfdsfsdfs",
-            "social": "sdfsdfsd",
-            "phone": "+996(553)43-24-23",
-            "message": "sdfcdssd",
-            "comments": "dsvcds",
-            "date": "3.4.2023"
+            "name": "Асыл",
+            "surname": "Асыл",
+            "social": "asyl",
+            "phone": "+996(556)52-12-33",
+            "message": "sdfdsd",
+            "comments": "sdfdssd",
+            "date": "17.4.2023"
           }
         ],
         "id": 1
       },
-      "date": "3.4.2023",
+      "date": "21.4.2023",
       "id": 3
-    },
-    {
-      "name": "Арлен",
-      "surname": "Арлен",
-      "social": "luffy_01_kg_00",
-      "phone": "+996(552)34-12-13",
-      "message": "ewrewnwein ",
-      "comments": "nakfniaewfa",
-      "user": {
-        "email": "admin@mail.ru",
-        "password": "$2a$10$PII5mixRfTMeeaawTs7Tb.7VKjSiAQg.ps2330lqyjjJvcsOfQGLO",
-        "login": "sultan",
-        "phone": "+996(554)56-54-54",
-        "confirmPwd": "admin2001",
-        "orders": [
-          {
-            "name": "asdasda",
-            "surname": "adsdasd",
-            "social": "asdasd",
-            "phone": "+996(222)22-22-22",
-            "message": "sacsacas",
-            "comments": "sacascas",
-            "date": "3.4.2023"
-          },
-          {
-            "name": "dsfcdsfsd",
-            "surname": "dsfdsfsdfs",
-            "social": "sdfsdfsd",
-            "phone": "+996(553)43-24-23",
-            "message": "sdfcdssd",
-            "comments": "dsvcds",
-            "date": "3.4.2023"
-          },
-          {
-            "name": "Sultan",
-            "surname": "Sherimbekov",
-            "social": "sultan",
-            "phone": "+996(553)22-21-22",
-            "message": "ыфвфвфы",
-            "comments": "фывфыыв",
-            "date": "3.4.2023"
-          }
-        ],
-        "id": 1
-      },
-      "date": "4.4.2023",
-      "id": 4
-    },
-    {
-      "name": "цувыа",
-      "surname": "цуке",
-      "social": "12345екуцй",
-      "phone": "+996(123)45-67-54",
-      "message": "укапавыф",
-      "comments": "ывсапропавыф\n",
-      "user": {
-        "email": "admin@mail.ru",
-        "password": "$2a$10$PII5mixRfTMeeaawTs7Tb.7VKjSiAQg.ps2330lqyjjJvcsOfQGLO",
-        "login": "sultan",
-        "phone": "+996(554)56-54-54",
-        "confirmPwd": "admin2001",
-        "orders": [
-          {
-            "name": "asdasda",
-            "surname": "adsdasd",
-            "social": "asdasd",
-            "phone": "+996(222)22-22-22",
-            "message": "sacsacas",
-            "comments": "sacascas",
-            "date": "3.4.2023"
-          },
-          {
-            "name": "dsfcdsfsd",
-            "surname": "dsfdsfsdfs",
-            "social": "sdfsdfsd",
-            "phone": "+996(553)43-24-23",
-            "message": "sdfcdssd",
-            "comments": "dsvcds",
-            "date": "3.4.2023"
-          },
-          {
-            "name": "Sultan",
-            "surname": "Sherimbekov",
-            "social": "sultan",
-            "phone": "+996(553)22-21-22",
-            "message": "ыфвфвфы",
-            "comments": "фывфыыв",
-            "date": "3.4.2023"
-          },
-          {
-            "name": "Арлен",
-            "surname": "Арлен",
-            "social": "luffy_01_kg_00",
-            "phone": "+996(552)34-12-13",
-            "message": "ewrewnwein ",
-            "comments": "nakfniaewfa",
-            "date": "4.4.2023"
-          }
-        ],
-        "id": 1
-      },
-      "date": "4.4.2023",
-      "id": 5
-    },
-    {
-      "name": "ыц",
-      "surname": "фыв",
-      "social": "123",
-      "phone": "+996(321)23-44-53",
-      "message": "1324",
-      "comments": "2345432",
-      "user": {
-        "email": "admin@mail.ru",
-        "password": "$2a$10$PII5mixRfTMeeaawTs7Tb.7VKjSiAQg.ps2330lqyjjJvcsOfQGLO",
-        "login": "sultan",
-        "phone": "+996(554)56-54-54",
-        "confirmPwd": "admin2001",
-        "orders": [
-          {
-            "name": "asdasda",
-            "surname": "adsdasd",
-            "social": "asdasd",
-            "phone": "+996(222)22-22-22",
-            "message": "sacsacas",
-            "comments": "sacascas",
-            "date": "3.4.2023"
-          },
-          {
-            "name": "dsfcdsfsd",
-            "surname": "dsfdsfsdfs",
-            "social": "sdfsdfsd",
-            "phone": "+996(553)43-24-23",
-            "message": "sdfcdssd",
-            "comments": "dsvcds",
-            "date": "3.4.2023"
-          },
-          {
-            "name": "Sultan",
-            "surname": "Sherimbekov",
-            "social": "sultan",
-            "phone": "+996(553)22-21-22",
-            "message": "ыфвфвфы",
-            "comments": "фывфыыв",
-            "date": "3.4.2023"
-          },
-          {
-            "name": "Арлен",
-            "surname": "Арлен",
-            "social": "luffy_01_kg_00",
-            "phone": "+996(552)34-12-13",
-            "message": "ewrewnwein ",
-            "comments": "nakfniaewfa",
-            "date": "4.4.2023"
-          },
-          {
-            "name": "цувыа",
-            "surname": "цуке",
-            "social": "12345екуцй",
-            "phone": "+996(123)45-67-54",
-            "message": "укапавыф",
-            "comments": "ывсапропавыф\n",
-            "date": "4.4.2023"
-          }
-        ],
-        "id": 1
-      },
-      "date": "4.4.2023",
-      "id": 6
-    },
-    {
-      "name": "Sultan",
-      "surname": "Sherimbekov",
-      "social": "luffy_01_kg_00",
-      "phone": "+996(555)44-32-22",
-      "message": "dsscsdcs sd",
-      "comments": "csdcsd csdc",
-      "user": {
-        "email": "admin@mail.ru",
-        "password": "$2a$10$psOW/8DO5.TnH7x0hq4QluM7Da9p42dkLvWSnNnLKawT.oIGtmsyO",
-        "login": "Admin",
-        "phone": "+996(500)32-63-20",
-        "confirmPwd": "admin",
-        "orders": [
-          {
-            "name": "asdasda",
-            "surname": "adsdasd",
-            "social": "asdasd",
-            "phone": "+996(222)22-22-22",
-            "message": "sacsacas",
-            "comments": "sacascas",
-            "date": "3.4.2023"
-          },
-          {
-            "name": "dsfcdsfsd",
-            "surname": "dsfdsfsdfs",
-            "social": "sdfsdfsd",
-            "phone": "+996(553)43-24-23",
-            "message": "sdfcdssd",
-            "comments": "dsvcds",
-            "date": "3.4.2023"
-          },
-          {
-            "name": "Sultan",
-            "surname": "Sherimbekov",
-            "social": "sultan",
-            "phone": "+996(553)22-21-22",
-            "message": "ыфвфвфы",
-            "comments": "фывфыыв",
-            "date": "3.4.2023"
-          },
-          {
-            "name": "Арлен",
-            "surname": "Арлен",
-            "social": "luffy_01_kg_00",
-            "phone": "+996(552)34-12-13",
-            "message": "ewrewnwein ",
-            "comments": "nakfniaewfa",
-            "date": "4.4.2023"
-          },
-          {
-            "name": "цувыа",
-            "surname": "цуке",
-            "social": "12345екуцй",
-            "phone": "+996(123)45-67-54",
-            "message": "укапавыф",
-            "comments": "ывсапропавыф\n",
-            "date": "4.4.2023"
-          },
-          {
-            "name": "ыц",
-            "surname": "фыв",
-            "social": "123",
-            "phone": "+996(321)23-44-53",
-            "message": "1324",
-            "comments": "2345432",
-            "date": "4.4.2023"
-          },
-          {
-            "name": "Sultan",
-            "email": "admin@mail.ru",
-            "phone": "+996(345)67-89-98",
-            "country": "dzfsd",
-            "city": "BISHKEK ",
-            "street": "zdcvz",
-            "house": "xcvx",
-            "flat": "e3w",
-            "message": "xcvxcv",
-            "clothes": [
-              {
-                "id": 3,
-                "title": "Hoody Anime",
-                "image": {
-                  "black": "Shop/hoody3.jpg",
-                  "white": "Shop/hoody3-white.jpg",
-                  "grey": "Shop/hoody3-grey.jpg"
-                },
-                "color": "white",
-                "size": "s",
-                "count": 1,
-                "price": 400,
-                "category": "hoody"
-              }
-            ],
-            "price": 380,
-            "date": "2023-04-04T15:00:56.635Z"
-          }
-        ],
-        "id": 1
-      },
-      "date": "5.4.2023",
-      "id": 7
-    },
-    {
-      "name": "Suli",
-      "surname": "Sherimbekov",
-      "social": "luffy_01_kg_00",
-      "phone": "+996(553)22-22-22",
-      "message": "sdasdsa",
-      "comments": "dasdad",
-      "user": {
-        "email": "admin@mail.ru",
-        "login": "sultan",
-        "phone": "+996(554)56-54-54",
-        "confirmPwd": "admin2001",
-        "orders": [
-          {
-            "name": "asdasda",
-            "surname": "adsdasd",
-            "social": "asdasd",
-            "phone": "+996(222)22-22-22",
-            "message": "sacsacas",
-            "comments": "sacascas",
-            "date": "3.4.2023"
-          },
-          {
-            "name": "dsfcdsfsd",
-            "surname": "dsfdsfsdfs",
-            "social": "sdfsdfsd",
-            "phone": "+996(553)43-24-23",
-            "message": "sdfcdssd",
-            "comments": "dsvcds",
-            "date": "3.4.2023"
-          },
-          {
-            "name": "Sultan",
-            "surname": "Sherimbekov",
-            "social": "sultan",
-            "phone": "+996(553)22-21-22",
-            "message": "ыфвфвфы",
-            "comments": "фывфыыв",
-            "date": "3.4.2023"
-          },
-          {
-            "name": "Арлен",
-            "surname": "Арлен",
-            "social": "luffy_01_kg_00",
-            "phone": "+996(552)34-12-13",
-            "message": "ewrewnwein ",
-            "comments": "nakfniaewfa",
-            "date": "4.4.2023"
-          },
-          {
-            "name": "цувыа",
-            "surname": "цуке",
-            "social": "12345екуцй",
-            "phone": "+996(123)45-67-54",
-            "message": "укапавыф",
-            "comments": "ывсапропавыф\n",
-            "date": "4.4.2023"
-          },
-          {
-            "name": "ыц",
-            "surname": "фыв",
-            "social": "123",
-            "phone": "+996(321)23-44-53",
-            "message": "1324",
-            "comments": "2345432",
-            "date": "4.4.2023"
-          },
-          {
-            "name": "Sultan",
-            "email": "admin@mail.ru",
-            "phone": "+996(345)67-89-98",
-            "country": "dzfsd",
-            "city": "BISHKEK ",
-            "street": "zdcvz",
-            "house": "xcvx",
-            "flat": "e3w",
-            "message": "xcvxcv",
-            "clothes": [
-              {
-                "id": 3,
-                "title": "Hoody Anime",
-                "image": {
-                  "black": "Shop/hoody3.jpg",
-                  "white": "Shop/hoody3-white.jpg",
-                  "grey": "Shop/hoody3-grey.jpg"
-                },
-                "color": "white",
-                "size": "s",
-                "count": 1,
-                "price": 400,
-                "category": "hoody"
-              }
-            ],
-            "price": 380,
-            "date": "2023-04-04T15:00:56.635Z"
-          },
-          {
-            "name": "Sultan",
-            "surname": "Sherimbekov",
-            "social": "luffy_01_kg_00",
-            "phone": "+996(555)44-32-22",
-            "message": "dsscsdcs sd",
-            "comments": "csdcsd csdc",
-            "date": "5.4.2023"
-          }
-        ],
-        "id": 1
-      },
-      "date": "13.4.2023",
-      "id": 8
     }
   ]
 }

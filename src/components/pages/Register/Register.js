@@ -56,6 +56,8 @@ const Register = () => {
                     Уже есть аккаунт, <Link className="register__acc" to='/login'>Войти</Link>
                 </p>
                 <Link className="register__acc" to='/'>На главную</Link>
+
+
             </form>
 
         </section>

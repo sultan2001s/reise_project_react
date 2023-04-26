@@ -5,6 +5,7 @@ import {Link} from "react-router-dom";
 import './login.css'
 import {CustomContext} from "../../../Context";
 
+
 const Admin = () => {
     const {loginAdmin} = useContext(CustomContext);
 
@@ -45,7 +46,6 @@ const Admin = () => {
                     Нет аккаунта, <Link className="login__acc" to='/register'>Регистрация</Link>
                 </p>
                 <Link className="login__acc" to='/'>На главную</Link>
-
             </form>
         </section>
 

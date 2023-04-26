@@ -2,8 +2,11 @@
     padding: 40px 0 40px;
 }
 
-.admin__all{
-
+.admin__tabs{
+    display: none;
+}
+.admin__tabs_active{
+    display: block;
 }
 
 .admin__title{
