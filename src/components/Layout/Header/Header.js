@@ -14,7 +14,7 @@ const Header = () => {
     const {openJob, burger, setBurger} = useContext(CustomContext);
 
     const closeCart = (e) => {
-        if (e.target.class === 'header__burger') {
+        if (e.target.class === 'burgers') {
 
         }
     };
@@ -25,11 +25,11 @@ const Header = () => {
                 <nav className="header__nav">
                     <Link to='/'><img className="header__img" src={logo} alt="logo"/></Link>
                     <ul onClick={closeCart} className={`header__list ${burger ? 'header__list_active' : ''}`}>
-                        <NavLink to='/' className="header__link">На главную</NavLink>
-                        <NavLink to='/program' className="header__link">Наши программы</NavLink>
+                        <NavLink onClick={closeCart} to='/' className="header__link">На главную</NavLink>
+                        <NavLink onClick={closeCart} to='/program' className="header__link">Наши программы</NavLink>
                         <li onClick={() => setOpen(!openJob)} className="header__link">Консультация</li>
-                        <NavLink to='/company' className="header__link">О компании</NavLink>
-                        <NavLink to='/courses' className="header__link">Курсы</NavLink>
+                        <NavLink onClick={closeCart} to='/company' className="header__link">О компании</NavLink>
+                        <NavLink onClick={closeCart} to='/courses' className="header__link">Курсы</NavLink>
                         <li className="header__link">
                             {
                                 user.login.length
@@ -38,8 +38,11 @@ const Header = () => {
                             }
                         </li>
                     </ul>
-                    <div onClick={() => setBurger(!burger)} className={`header__burger ${burger ? 'header__burger_active' : ''}`}>
-                        <span className="header__burger-line"/>
+                    <div className={`burger ${burger ? 'burger_active' : ''}`} onClick={() => setBurger(!burger)}>
+                        <span className="burger__line"/>
+                    </div>
+                    <div onClick={() => setBurger(false)} className={`burgers ${burger ? 'burgers_active' : ''}`}>
+
                     </div>
                 </nav>
             </div>

@@ -148,40 +148,40 @@ const Admin = () => {
                 </div>
                 <div className={tab === 2 ? "admin__tabs admin__tabs_active" : "admin__tabs"}>
                     <h2 className="admin__h2">История</h2>
-                    {
-                        user.orders.map((item, idx) => (
-                            <div className="admin__history" key={idx}>
-                                <div className="admin__row">
-                                    <div>{item.date}</div>
-                                    <div>
-                                        <h3>Имя</h3>
-                                        <p>{item.name}</p>
-                                    </div>
-                                    <div>
-                                        <h3>Фамилия</h3>
-                                        <p>{item.surname}</p>
-                                    </div>
-                                    <div>
-                                        <h3>Instagram</h3>
-                                        <p> {item.social}</p>
-                                    </div>
-                                    <div>
-                                        <h3>Номер телефона</h3>
-                                        <p>  {item.phone}</p>
-                                    </div>
-                                    <div>
-                                        <h3>Ваш вопрос</h3>
-                                        <p>{item.message}</p>
-                                    </div>
-                                    <div>
-                                        <h3>О себе</h3>
-                                        <p>{item.comments}</p>
-                                    </div>
-                                    {/*<button>Delete</button>*/}
-                                </div>
-                            </div>
-                        ))
-                    }
+                    {/*{*/}
+                    {/*    user.orders.map((item, idx) => (*/}
+                    {/*        <div className="admin__history" key={idx}>*/}
+                    {/*            <div className="admin__row">*/}
+                    {/*                <div>{item.date}</div>*/}
+                    {/*                <div>*/}
+                    {/*                    <h3>Имя</h3>*/}
+                    {/*                    <p>{item.name}</p>*/}
+                    {/*                </div>*/}
+                    {/*                <div>*/}
+                    {/*                    <h3>Фамилия</h3>*/}
+                    {/*                    <p>{item.surname}</p>*/}
+                    {/*                </div>*/}
+                    {/*                <div>*/}
+                    {/*                    <h3>Instagram</h3>*/}
+                    {/*                    <p> {item.social}</p>*/}
+                    {/*                </div>*/}
+                    {/*                <div>*/}
+                    {/*                    <h3>Номер телефона</h3>*/}
+                    {/*                    <p>  {item.phone}</p>*/}
+                    {/*                </div>*/}
+                    {/*                <div>*/}
+                    {/*                    <h3>Ваш вопрос</h3>*/}
+                    {/*                    <p>{item.message}</p>*/}
+                    {/*                </div>*/}
+                    {/*                <div>*/}
+                    {/*                    <h3>О себе</h3>*/}
+                    {/*                    <p>{item.comments}</p>*/}
+                    {/*                </div>*/}
+                    {/*                /!*<button>Delete</button>*!/*/}
+                    {/*            </div>*/}
+                    {/*        </div>*/}
+                    {/*    ))*/}
+                    {/*}*/}
                 </div>
                 <div className={tab === 3 ? "admin__tabs admin__tabs_active" : "admin__tabs"}>
                     Admin panel
