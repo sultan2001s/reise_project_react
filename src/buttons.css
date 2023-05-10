@@ -5,7 +5,7 @@
     right: 60px;
     bottom: 30px;
     border-radius: 50%;
-    z-index: 100;
+    z-index: 10;
 
 }
 
@@ -158,17 +158,14 @@ button {
         right: 20px;
         bottom: 19px;
     }
+    .fab button:hover, .button:focus {
+        color: #313133;
+        transform: translateY(0);
+    }
+
+    .fab button:hover::before, button:focus::before {
+        opacity: 0;
+    }
+
 }
 
-/*.close{*/
-/*    display: none;*/
-/*    position: fixed;*/
-/*    top: 0;*/
-/*    left: 0;*/
-/*    width: 100%;*/
-/*    height: 100vh;*/
-/*    z-index: 50;*/
-/*}*/
-/*.close_active{*/
-/*    display: flex;*/
-/*}*/

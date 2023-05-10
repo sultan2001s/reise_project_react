@@ -16,12 +16,6 @@ const Buttons = () => {
 
     const [isOpen, setIsOpen] = useState(false);
 
-    // const closeFab = (e) => {
-    //     if (e.target.class === 'close') {
-    //
-    //     }
-    // };
-
     return (
         <div className={`fab ${isOpen ? "open" : ""}`}>
             <button onClick={() => setIsOpen(!isOpen)}>
@@ -48,9 +42,6 @@ const Buttons = () => {
                     <span>ул.Керимбекова, 26  <br/> +996 509 975 311 </span>
                 </button>
             </div>
-            {/*<div onClick={() => setIsOpen(false)} className={`close ${isOpen ? 'close_active' : ''}`}>*/}
-
-            {/*</div>*/}
         </div>
     );
 };

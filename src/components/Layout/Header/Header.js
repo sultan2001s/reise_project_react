@@ -25,11 +25,11 @@ const Header = () => {
                 <nav className="header__nav">
                     <Link to='/'><img className="header__img" src={logo} alt="logo"/></Link>
                     <ul onClick={closeCart} className={`header__list ${burger ? 'header__list_active' : ''}`}>
-                        <NavLink onClick={closeCart} to='/' className="header__link">На главную</NavLink>
-                        <NavLink onClick={closeCart} to='/program' className="header__link">Наши программы</NavLink>
+                        <NavLink to='/' className="header__link">На главную</NavLink>
+                        <NavLink to='/program' className="header__link">Наши программы</NavLink>
                         <li onClick={() => setOpen(!openJob)} className="header__link">Консультация</li>
-                        <NavLink onClick={closeCart} to='/company' className="header__link">О компании</NavLink>
-                        <NavLink onClick={closeCart} to='/courses' className="header__link">Курсы</NavLink>
+                        <NavLink to='/company' className="header__link">О компании</NavLink>
+                        <NavLink to='/courses' className="header__link">Курсы</NavLink>
                         <li className="header__link">
                             {
                                 user.login.length
