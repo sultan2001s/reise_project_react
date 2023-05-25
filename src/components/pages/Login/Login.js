@@ -48,7 +48,6 @@ const Admin = () => {
                 <Link className="login__acc" to='/'>На главную</Link>
             </form>
         </section>
-
     );
 };
 

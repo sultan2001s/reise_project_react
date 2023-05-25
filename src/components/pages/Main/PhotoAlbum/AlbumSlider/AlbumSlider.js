@@ -14,7 +14,7 @@ import card1 from "../../../../images/card1.jpeg";
 import card2 from "../../../../images/card2.jpeg";
 import card3 from "../../../../images/card3.jpeg";
 import card18 from "../../../../images/card18.jpeg";
-import card5 from "../../../../images/card5.JPG";
+// import card5 from "../../../../images/card5.JPG";
 import card6 from "../../../../images/card6.jpeg";
 import card7 from "../../../../images/card7.jpeg";
 import card8 from "../../../../images/card8.jpeg";
@@ -36,21 +36,25 @@ const SliderCourse = () => {
     return (
         <>
             <Swiper
-                autoplay={{delay: 3000, disableOnInteraction: false,}}
-                speed={3000}
+                autoplay={{delay: 1500, disableOnInteraction: false,}}
+                speed={1000}
                 slidesPerView={1}
                 spaceBetween={20}
                 breakpoints={{
-                    640: {
-                        slidesPerView: 1,
-                        spaceBetween: 20,
-                    },
-                    768: {
+                    440: {
                         slidesPerView: 2,
                         spaceBetween: 20,
                     },
-                    1024: {
+                    640: {
                         slidesPerView: 3,
+                        spaceBetween: 20,
+                    },
+                    768: {
+                        slidesPerView: 3,
+                        spaceBetween: 20,
+                    },
+                    1024: {
+                        slidesPerView: 4,
                         spaceBetween: 20,
                     },
                     1200: {
@@ -145,18 +149,18 @@ const SliderCourse = () => {
                         )}
                     </Item>
                 </SwiperSlide>
-                <SwiperSlide>
-                    <Item
-                        original={card5}
-                        thumbnail={card5}
-                        width="700"
-                        height="1024"
-                    >
-                        {({ ref, open }) => (
-                            <img className="album__img" ref={ref} onClick={open} src={card5} alt="card"/>
-                        )}
-                    </Item>
-                </SwiperSlide>
+                {/*<SwiperSlide>*/}
+                {/*    <Item*/}
+                {/*        original={card5}*/}
+                {/*        thumbnail={card5}*/}
+                {/*        width="700"*/}
+                {/*        height="1024"*/}
+                {/*    >*/}
+                {/*        /!*{({ ref, open }) => (*!/*/}
+                {/*        /!*    <img className="album__img" ref={ref} onClick={open} src={card5} alt="card"/>*!/*/}
+                {/*        /!*)}*!/*/}
+                {/*    </Item>*/}
+                {/*</SwiperSlide>*/}
                 <SwiperSlide>
                     <Item
                         original={card6}

@@ -26,8 +26,8 @@ const Paris = () => {
                                     <Item
                                         original={parisImg}
                                         thumbnail={parisImg}
-                                        width="1024"
-                                        height="768"
+                                        width="1224"
+                                        height="1024"
                                     >
                                         {({ ref, open }) => (
                                             <img className="paris__img" ref={ref} onClick={open} src={parisImg} alt="parisImg"/>
@@ -36,8 +36,8 @@ const Paris = () => {
                                     <Item
                                         original={teamC}
                                         thumbnail={teamC}
-                                        width="1024"
-                                        height="768"
+                                        width="1224"
+                                        height="1024"
                                     >
                                         {({ ref, open }) => (
                                             <img className="paris__img paris-image" ref={ref} onClick={open} src={teamC} alt="parisImg"/>

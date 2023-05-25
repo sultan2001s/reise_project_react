@@ -6,13 +6,13 @@ import "swiper/css";
 import "./sliderFaces.css";
 
 import { Autoplay } from "swiper";
-import img from "../../../../images/img.JPG";
-import img1 from "../../../../images/img1.JPG";
-import img2 from "../../../../images/img2.JPG";
-import img3 from "../../../../images/img3.JPG";
-import img4 from "../../../../images/img4.JPG";
-import img5 from "../../../../images/img5.JPG";
-import img6 from "../../../../images/img6.JPG";
+import img from "../../../../images/tattygul.png";
+import img1 from "../../../../images/eliza.png";
+import img2 from "../../../../images/barsbek.png";
+import img3 from "../../../../images/ainazik1.png";
+import img4 from "../../../../images/maksat.png";
+import img5 from "../../../../images/alina.png";
+import img6 from "../../../../images/elnura.png";
 
 
 
@@ -21,34 +21,30 @@ const SliderCourse = () => {
     return (
         <>
             <Swiper
-                autoplay={{delay: 3000, disableOnInteraction: false,}}
-                speed={3000}
+                autoplay={{delay: 4000, disableOnInteraction: false,}}
+                speed={2000}
                 slidesPerView={1}
                 spaceBetween={20}
                 breakpoints={{
-                    420: {
-                        slidesPerView: 1,
-                        spaceBetween: 10,
-                    },
                     400: {
                         slidesPerView: 1,
-                        spaceBetween: 10,
+                        spaceBetween: 20,
                     },
                     640: {
-                        slidesPerView: 3,
-                        spaceBetween: 10,
+                        slidesPerView: 2,
+                        spaceBetween: 20,
                     },
                     768: {
                         slidesPerView: 3,
-                        spaceBetween: 10,
+                        spaceBetween: 20,
                     },
                     1024: {
-                        slidesPerView: 3,
-                        spaceBetween: 10,
+                        slidesPerView: 4,
+                        spaceBetween: 20,
                     },
                     1200: {
                         slidesPerView: 4,
-                        spaceBetween: 30,
+                        spaceBetween: 20,
                     }
                 }}
                 modules={[Autoplay]}
@@ -63,43 +59,43 @@ const SliderCourse = () => {
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className="faces__card">
-                        <img className="faces__img" src={img1} alt="elnura"/>
-                        <h2 className="faces__h2">Ашимбекова Элиза </h2>
-                        <p className="faces__text">(PR manager)</p>
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <div className="faces__card">
-                        <img className="faces__img" src={img} alt="elnura"/>
-                        <h2 className="faces__h2">Кубатова Татыгуль</h2>
-                        <p className="faces__text">(менеджер по курсам)</p>
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <div className="faces__card">
-                        <img className="faces__img" src={img2} alt="elnura"/>
-                        <h2 className="faces__h2">Кыялбеков Барсбек </h2>
-                        <p className="faces__text">(менеджер летней работы)</p>
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <div className="faces__card">
-                        <img className="faces__img" src={img3} alt="elnura"/>
+                        <img className="faces__img" src={img3} alt="Айназик"/>
                         <h2 className="faces__h2">Султаналиева Айназик </h2>
                         <p className="faces__text">(менеджер годовой работы и Ausbildung)</p>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className="faces__card">
-                        <img className="faces__img" src={img4} alt="elnura"/>
-                        <h2 className="faces__h2">Маликасан уулу Максат </h2>
+                        <img className="faces__img" src={img1} alt="Элиза"/>
+                        <h2 className="faces__h2">Ашимбекова Элиза </h2>
+                        <p className="faces__text">(PR manager)</p>
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <div className="faces__card">
+                        <img className="faces__img" src={img} alt="Татыгуль"/>
+                        <h2 className="faces__h2">Кубатова Татыгуль</h2>
+                        <p className="faces__text">(менеджер по курсам)</p>
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <div className="faces__card">
+                        <img className="faces__img" src={img2} alt="Барсбек"/>
+                        <h2 className="faces__h2">Кыялбеков Барсбек </h2>
                         <p className="faces__text">(менеджер летней работы)</p>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className="faces__card">
-                        <img className="faces__img" src={img5} alt="elnura"/>
+                        <img className="faces__img" src={img5} alt="Алина"/>
                         <h2 className="faces__h2">Азатова Алина</h2>
+                        <p className="faces__text">(менеджер летней работы)</p>
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <div className="faces__card">
+                        <img className="faces__img" src={img4} alt="Максат"/>
+                        <h2 className="faces__h2">Маликасан уулу Максат </h2>
                         <p className="faces__text">(менеджер летней работы)</p>
                     </div>
                 </SwiperSlide>

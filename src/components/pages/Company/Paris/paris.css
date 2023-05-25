@@ -45,8 +45,9 @@
 
 @media (max-width: 1106px) {
     .paris__text {
-        font-size: 19px;
+        font-size: 21px;
         line-height: 30px;
+        font-weight: 700;
     }
 }
 
@@ -60,9 +61,12 @@
 
 @media (max-width: 584px) {
     .paris__text {
-        font-size: 16px;
-        line-height: 28px;
+        font-size: 23px;
+        font-weight: 700;
         margin-bottom: 19px;
+    }
+    .paris__img {
+        width: 465px;
     }
 }
 
@@ -79,7 +83,8 @@
         font-size: 20px;
     }
     .paris__text {
-        font-size: 14px;
+        font-size: 23px;
+        font-weight: 700;
     }
 }
 
@@ -88,11 +93,15 @@
         width: 85%;
     }
     .paris__text {
-         font-size: 12px;
-        line-height: 22px;
-
+        font-size: 23px;
+        font-weight: 700;
     }
 
 }
 
-/**/
+@media (max-width: 360px) {
+    .paris__text {
+        font-size: 19px;
+        font-weight: 700;
+    }
+}

@@ -37,7 +37,7 @@ const Program = () => {
                             <svg width="37" height="35" viewBox="0 0 37 35" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M0.00141144 17.5L36.0014 0.612505L36.0014 34.3875L0.00141144 17.5Z" fill="#FE0000"/>
                             </svg>
-                            <p className="program__text">Самая любимая программа наших студентов</p>
+                            <p className="certificate__text">Самая любимая программа наших студентов</p>
                             <div className="program__line"/>
                             <h2 className="program__left-title">Ferienjob или Летняя работа</h2>
                         </div>
@@ -77,7 +77,7 @@ const Program = () => {
                                     <svg width="37" height="35" viewBox="0 0 37 35" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M0.00141144 17.5L36.0014 0.612505L36.0014 34.3875L0.00141144 17.5Z" fill="#FE0000"/>
                                     </svg>
-                                    <p className="annual__text">Программа для дипломированных специалистов</p>
+                                    <p className="certificate__text">Работа для дипломированных специалистов</p>
                                     <div className="annual__line"/>
                                     <h2 className="annual__left-title">Годовая работа</h2>
                                 </div>
@@ -128,7 +128,7 @@ const Program = () => {
                                         <li className="diploma__title">Сфера гостеприимства</li>
                                         <li className="diploma__item"><div className="diploma__line"/>Туризм</li>
                                         <li className="diploma__item"><div className="diploma__line"/>Международный туризм</li>
-                                        <li className="diploma__item"><div className="diploma__line"/>Менеджмент Турзима и гостиничного дела</li>
+                                        <li className="diploma__item"><div className="diploma__line"/>Менеджмент туризма и гостиничного дела</li>
                                         <li className="diploma__item"><div className="diploma__line"/>Туристический бизнес и служба гидов</li>
                                         <li className="diploma__item"><div className="diploma__line"/>Ресторанное дело и искусство кулинарии</li>
                                         <li className="diploma__item"><div className="diploma__line"/>Гостиничное дело</li>
@@ -160,9 +160,9 @@ const Program = () => {
                                     <svg width="37" height="35" viewBox="0 0 37 35" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M0.00141144 17.5L36.0014 0.612505L36.0014 34.3875L0.00141144 17.5Z" fill="#FE0000"/>
                                     </svg>
-                                    <p className="certificate__text">Программа для выпусников </p>
+                                    <p className="certificate__text">Дуальная система обучения от 18-35лет </p>
                                     <div className="certificate__line"/>
-                                    <h2 className="certificate__left-title">Ausbildung <span style={{color: '#FE0000', fontSize: '20px'}}>(Дуальное обучение)</span></h2>
+                                    <h2 className="certificate__left-title">Ausbildung </h2>
                                 </div>
                                 <div className="certificate__content">
                                     <div className="certificate__left">
@@ -173,7 +173,7 @@ const Program = () => {
                                         </span>
                                             <span>
                                                     <h4 className="certificate__h4">Требования:</h4>
-                                                    <p className="certificate__p">- Иметь аттестат 11 класса или диплом <br/> колледжа/университета <br/> - Возраст 18-35 лет <br/> - Сертификат уровня В1 (все части) <br/> c (Deutsches Sprachdiplom/ÖSD/ <br/> Goethe-Zertifikat/TestDaF/TELC)</p>
+                                                    <p className="certificate__p">- Иметь аттестат 11 класса или диплом колледжа/университета <br/> - Возраст 18-35 лет <br/> - Сертификат уровня В1 (все части) c <br/> (Deutsches Sprachdiplom/ÖSD/ Goethe-Zertifikat/TestDaF/TELC)</p>
                                                 </span>
                                         </div>
                                         <h4 className="certificate__h4" data-aos="fade-right">Первичный пакет документов:</h4>
